@@ -408,7 +408,7 @@ public class InterfaceUI extends Activity {
 
         if(wallpaper_checker == true){
             calculator_layout.setBackground(getResources()
-                    .getDrawable(R.drawable.rainbow_background));
+                    .getDrawable(R.drawable.background_math_final));
         } else {
             calculator_layout.setBackgroundColor(getResources().getColor(R.color.Black));
         }
