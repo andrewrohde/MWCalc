@@ -31,10 +31,10 @@
     <string name="kmtomi">km to mi</string>
     <string name="fttom">ft to m</string>
     <string name="mtoft">m to ft</string>
-    <string name="weight">weight</string>
+    <string name="weight">Weight</string>
     <string name="lbtokg">lb to kg</string>
     <string name="kgtolb">kg to lb</string>
-    <string name="speed">speed</string>
+    <string name="speed">Speed</string>
     <string name="mphtokph">mph to kph</string>
     <string name="kphtomph">kph to mph</string>
     <string name="calculator_text_view">Number Goes Here</string>

@@ -191,7 +191,7 @@
     <string name="settings">Settings</string>
     <string name="seven">7</string>
     <string name="six">6</string>
-    <string name="speed">speed</string>
+    <string name="speed">Speed</string>
     <string name="startingvalue">Starting Value</string>
     <string name="subtraction">-</string>
     <string name="three">3</string>
@@ -199,7 +199,7 @@
     <string name="unitconverter">Unit Converter</string>
     <string name="wall_change">Change Wallpaper</string>
     <string name="website_hint">Click to open the developer\'s website</string>
-    <string name="weight">weight</string>
+    <string name="weight">Weight</string>
     <string name="zero">0</string>
     <!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">

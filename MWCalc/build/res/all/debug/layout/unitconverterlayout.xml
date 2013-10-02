@@ -2,10 +2,11 @@
 
 <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/linear_layout">
+        android:id="@+id/linear_layout"
+    android:gravity="left">
 
     <TextView
             android:layout_width="fill_parent"
@@ -35,7 +36,7 @@
             android:id="@+id/scrollView"/>
 
     <ExpandableListView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="300dp"
             android:id="@+id/converterlist"
             android:layout_marginTop="15dp"
@@ -44,7 +45,8 @@
             android:paddingBottom="15dp"
             android:textFilterEnabled="false"
             android:smoothScrollbar="true"
-        android:footerDividersEnabled="true"/>
+            android:footerDividersEnabled="true"
+            android:paddingLeft="6dp"/>
 
     <TextView
             android:layout_width="fill_parent"
