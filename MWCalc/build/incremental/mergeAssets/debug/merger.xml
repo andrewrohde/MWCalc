@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\assets" />
+        <source path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\debug\assets" />
+        <source path="/home/andrew/workspace/android/MWCalc/MWCalc/src/debug/assets" />
     </dataSet>
 
 </merger>

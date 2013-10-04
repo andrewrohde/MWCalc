@@ -11,7 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/colors.xml 
+        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/colors.xml 
          */
         public static final int AliceBlue=0x7f040000;
         public static final int AntiqueWhite=0x7f040001;
@@ -172,7 +172,7 @@ public final class R {
         public static final int yellow=0x7f04009c;
     }
     public static final class dimen {
-        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/dimensions.xml 
+        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/dimensions.xml 
          */
         public static final int button_height=0x7f050000;
         public static final int button_width=0x7f050001;
@@ -237,53 +237,54 @@ public final class R {
         public static final int write_arrow=0x7f020038;
     }
     public static final class id {
-        public static final int addition=0x7f09001d;
+        public static final int addition=0x7f09001e;
         public static final int calculator_layout=0x7f090000;
-        public static final int childImage=0x7f090003;
-        public static final int clear=0x7f09000b;
-        public static final int converterlist=0x7f09002a;
-        public static final int convertfinalvalue=0x7f09002b;
-        public static final int currently_displayed_value=0x7f090001;
-        public static final int decimal=0x7f090020;
-        public static final int delete=0x7f090009;
-        public static final int devs_website=0x7f090005;
-        public static final int devs_website_hint=0x7f090006;
-        public static final int division=0x7f09000e;
-        public static final int eight=0x7f090011;
-        public static final int equals=0x7f090021;
-        public static final int five=0x7f090016;
-        public static final int four=0x7f090015;
-        public static final int help=0x7f09002e;
-        public static final int keypad_layout=0x7f090002;
-        public static final int keypad_layout_left=0x7f090007;
-        public static final int keypad_layout_right=0x7f090024;
-        public static final int linearLayout_0=0x7f09001e;
-        public static final int linearLayout_1=0x7f090019;
-        public static final int linearLayout_4=0x7f090014;
-        public static final int linearLayout_7=0x7f09000f;
-        public static final int linearLayout_clear=0x7f09000a;
-        public static final int linearLayout_delete=0x7f090008;
-        public static final int linearLayout_ui_switch=0x7f090022;
-        public static final int linear_layout=0x7f090026;
-        public static final int multiplication=0x7f090013;
-        public static final int nine=0x7f090012;
-        public static final int one=0x7f09001a;
-        public static final int scrollView=0x7f090029;
-        public static final int settings=0x7f09002d;
-        public static final int seven=0x7f090010;
-        public static final int six=0x7f090017;
-        public static final int sqrt=0x7f09000c;
-        public static final int squared=0x7f09000d;
-        public static final int startingvalueinput=0x7f090028;
-        public static final int startingvaluetext=0x7f090027;
-        public static final int subtraction=0x7f090018;
-        public static final int textView1=0x7f090004;
-        public static final int three=0x7f09001c;
-        public static final int two=0x7f09001b;
-        public static final int ui_switch=0x7f090023;
-        public static final int unitconverter=0x7f09002c;
-        public static final int wallCheckBox=0x7f090025;
-        public static final int zero=0x7f09001f;
+        public static final int childImage=0x7f090004;
+        public static final int clear=0x7f09000c;
+        public static final int converterlist=0x7f09002b;
+        public static final int convertfinalvalue=0x7f09002c;
+        public static final int currently_displayed_value=0x7f090002;
+        public static final int decimal=0x7f090021;
+        public static final int delete=0x7f09000a;
+        public static final int devs_website=0x7f090006;
+        public static final int devs_website_hint=0x7f090007;
+        public static final int division=0x7f09000f;
+        public static final int eight=0x7f090012;
+        public static final int equals=0x7f090022;
+        public static final int five=0x7f090017;
+        public static final int four=0x7f090016;
+        public static final int help=0x7f09002f;
+        public static final int keypad_layout=0x7f090003;
+        public static final int keypad_layout_left=0x7f090008;
+        public static final int keypad_layout_right=0x7f090025;
+        public static final int linearLayout_0=0x7f09001f;
+        public static final int linearLayout_1=0x7f09001a;
+        public static final int linearLayout_4=0x7f090015;
+        public static final int linearLayout_7=0x7f090010;
+        public static final int linearLayout_clear=0x7f09000b;
+        public static final int linearLayout_delete=0x7f090009;
+        public static final int linearLayout_ui_switch=0x7f090023;
+        public static final int linear_layout=0x7f090027;
+        public static final int multiplication=0x7f090014;
+        public static final int nine=0x7f090013;
+        public static final int one=0x7f09001b;
+        public static final int previous_value=0x7f090001;
+        public static final int scrollView=0x7f09002a;
+        public static final int settings=0x7f09002e;
+        public static final int seven=0x7f090011;
+        public static final int six=0x7f090018;
+        public static final int sqrt=0x7f09000d;
+        public static final int squared=0x7f09000e;
+        public static final int startingvalueinput=0x7f090029;
+        public static final int startingvaluetext=0x7f090028;
+        public static final int subtraction=0x7f090019;
+        public static final int textView1=0x7f090005;
+        public static final int three=0x7f09001d;
+        public static final int two=0x7f09001c;
+        public static final int ui_switch=0x7f090024;
+        public static final int unitconverter=0x7f09002d;
+        public static final int wallCheckBox=0x7f090026;
+        public static final int zero=0x7f090020;
     }
     public static final class layout {
         public static final int calculator_ui=0x7f030000;
@@ -299,7 +300,7 @@ public final class R {
         public static final int activity_menu=0x7f080000;
     }
     public static final class string {
-        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/strings.xml 
+        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/strings.xml 
          */
         public static final int addition=0x7f060000;
         public static final int app_name=0x7f060001;
@@ -341,15 +342,15 @@ public final class R {
         public static final int zero=0x7f060025;
     }
     public static final class style {
-        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/styles.xml 
+        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/styles.xml 
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values-v11/styles.xml 
+ From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values-v11/styles.xml 
  API 11 theme customizations can go here. 
- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values-v14/styles.xml 
+ From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values-v14/styles.xml 
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;

@@ -13,7 +13,8 @@ public final class CalculatorMathOperations {
 
         double displayed_value_after_operation = 0;
 
-        if (current_display_value!= null){
+        if (!current_display_value.equals(null) && !current_display_value.equals("0")
+                && !current_display_value.equals(".") && first_number != 0 ){
 
             if (operator_selection == 1){
                 displayed_value_after_operation = first_number +
@@ -43,8 +44,9 @@ public final class CalculatorMathOperations {
 
     public static String mSquareRoot(String current_display_value){
 
-        if (current_display_value == null){
-            return null;
+        if (current_display_value.equals(null) || current_display_value.equals("0")
+                || current_display_value.equals(".")){
+            return "0";
         } else {
             return String.valueOf(Math.sqrt(Double.parseDouble(current_display_value)));
         }
@@ -52,9 +54,10 @@ public final class CalculatorMathOperations {
 
     public static String mNumberSquared(String current_display_value){
 
-        if (current_display_value == null){
-            return null;
-        } else {
+        if (current_display_value.equals(null) || current_display_value.equals("0")
+                || current_display_value.equals(".")) {
+            return "0";
+        } else{
             return String.valueOf(Double.parseDouble(current_display_value) *
                     Double.parseDouble(current_display_value));
         }
@@ -70,11 +73,11 @@ public final class CalculatorMathOperations {
         }
 
         if (current_display_value.equals(null)) {
-            return current_display_value;
+            return "0";
         }
 
         if (current_display_value.length() == 1) {
-            return null;
+            return "0";
         }
 
         return current_display_value;

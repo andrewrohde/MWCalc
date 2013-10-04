@@ -22,7 +22,7 @@ public class InterfaceUI extends Activity {
     private static final String TAG = InterfaceUI.class.getName();
     private static String current_display_value = null;
     private static int operator_selection;
-    private static double first_number;
+    private static double first_number = 0;
     private static Boolean wallpaper_checker;
     private static int button_height;
     private static int button_width;
@@ -199,18 +199,24 @@ public class InterfaceUI extends Activity {
         public void onClick(View v)  {
             String current_selection = ".";
 
+            Log.d(TAG, "current_display_value in decimal = " + current_display_value);
+
             try{
             if (!current_display_value.contains(current_selection) &&
                     !current_display_value.equals(null) && last_button != 2){
                 current_display_value = ButtonHandle
                         .mAddNumberToValue(current_selection, current_display_value);
+                Log.d(TAG, "current_display_value in decimal before update display = " + current_display_value);
                 mUpdateDisplay();
+                Log.d(TAG, "current_display_value in decimal after update display = " + current_display_value);
             }
             last_button = 1;
         }catch (Exception e) {
                 e.printStackTrace();
             }
+            Log.d(TAG, "current_display_value in decimal = " + current_display_value);
         }
+
     };
 
     private View.OnClickListener zeroListener = new View.OnClickListener() {
@@ -292,7 +298,7 @@ public class InterfaceUI extends Activity {
             first_number = 0;
             //last_button = 1;
 
-            current_display_value = null;
+            current_display_value = "0";
             mUpdateDisplay();
         }
     };
@@ -382,6 +388,9 @@ public class InterfaceUI extends Activity {
 
         LinearLayout calculator_layout = (LinearLayout)findViewById(R.id.calculator_layout);
         TextView display = (TextView)findViewById(R.id.currently_displayed_value);
+        TextView previous_value = (TextView)findViewById(R.id.previous_value);
+
+
 
         LinearLayout button_layout = (LinearLayout)findViewById(R.id.keypad_layout);
 
@@ -398,13 +407,12 @@ public class InterfaceUI extends Activity {
 
         mSetButtonSize();
 
-        current_display_value =
-                com.madwindevelopers.mwcalc.FormatCalcValue
-                        .mCalcNullChecker(current_display_value);
-        current_display_value =
-                com.madwindevelopers.mwcalc.FormatCalcValue
-                        .mRemoveTrailingPointZero(current_display_value);
-        display.setText(current_display_value);
+        display.setText(FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
+                        current_display_value)));
+
+
+        previous_value.setText(
+                FormatCalcValue.mRemoveTrailingPointZero(Double.toString(first_number)));
 
         if(wallpaper_checker == true){
             calculator_layout.setBackground(getResources()

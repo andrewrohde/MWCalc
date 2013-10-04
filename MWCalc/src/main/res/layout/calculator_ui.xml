@@ -10,11 +10,25 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="top">
+        android:gravity="top"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="fill_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous_value"
+            android:gravity="center|right"
+            android:textColor="#42ff25"
+            android:background="@color/TransDarkGray"
+            android:singleLine="false"
+            android:text="@string/calculator_text_view"
+            android:textSize="52sp"
+            android:textAlignment="gravity"
+            android:lines="1"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/currently_displayed_value"
             android:gravity="center|right"
             android:textColor="#42ff25"
@@ -22,7 +36,10 @@
             android:singleLine="false"
             android:text="@string/calculator_text_view"
             android:textSize="52sp"
-            android:textAlignment="gravity"/>
+            android:textAlignment="gravity"
+            android:lines="1"/>
+
+
 
         <!-- ***currently_displayed_value text view properties***
                     android:shadowColor="@color/White"

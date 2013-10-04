@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/colors.xml -->
     <color name="AliceBlue">#F0F8FF</color>
     <color name="AntiqueWhite">#FAEBD7</color>
     <color name="Aqua">#00FFFF</color>
@@ -159,10 +159,10 @@
     <color name="teal">#008080</color>
     <color name="white">#FFFFFF</color>
     <color name="yellow">#FFFF00</color>
-    <!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/dimensions.xml -->
+    <!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/dimensions.xml -->
     <dimen name="button_height">140px</dimen>
     <dimen name="button_width">140px</dimen>
-    <!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/strings.xml -->
     <string name="addition">+</string>
     <string name="app_name">MWCalc</string>
     <string name="calculator_text_view">Number Goes Here</string>
@@ -201,7 +201,7 @@
     <string name="website_hint">Click to open the developer\'s website</string>
     <string name="weight">Weight</string>
     <string name="zero">0</string>
-    <!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
