@@ -8,4 +8,4 @@
     <item android:state_pressed="true"
             android:drawable="@drawable/button_icon_pressed"/>
 
-</selector><!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/clear_button_selector.xml -->
+</selector><!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/drawable/clear_button_selector.xml -->

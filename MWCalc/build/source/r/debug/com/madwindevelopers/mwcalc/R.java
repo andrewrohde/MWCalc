@@ -11,7 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/colors.xml 
+        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/colors.xml 
          */
         public static final int AliceBlue=0x7f040000;
         public static final int AntiqueWhite=0x7f040001;
@@ -172,7 +172,7 @@ public final class R {
         public static final int yellow=0x7f04009c;
     }
     public static final class dimen {
-        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/dimensions.xml 
+        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/dimensions.xml 
          */
         public static final int button_height=0x7f050000;
         public static final int button_width=0x7f050001;
@@ -300,7 +300,7 @@ public final class R {
         public static final int activity_menu=0x7f080000;
     }
     public static final class string {
-        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/strings.xml 
+        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/strings.xml 
          */
         public static final int addition=0x7f060000;
         public static final int app_name=0x7f060001;
@@ -342,15 +342,15 @@ public final class R {
         public static final int zero=0x7f060025;
     }
     public static final class style {
-        /**  From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/styles.xml 
+        /**  From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values/styles.xml 
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values-v11/styles.xml 
+ From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values-v11/styles.xml 
  API 11 theme customizations can go here. 
- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values-v14/styles.xml 
+ From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/values-v14/styles.xml 
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;

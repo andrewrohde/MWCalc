@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/minus" android:state_checked="true"></item>
     <item android:drawable="@drawable/plus"></item>
 
-</selector><!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/plus_minus_list_selector.xml -->
+</selector><!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/drawable/plus_minus_list_selector.xml -->
