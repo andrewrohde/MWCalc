@@ -8,4 +8,4 @@
     <item android:state_pressed="true"
             android:drawable="@drawable/button_selected"/>
 
-</selector><!-- From: file:/C:/Users/Andrew1/workspace/Android/MWCalc/MWCalc/src/main/res/drawable/left_ui_selector.xml -->
+</selector><!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/left_ui_selector.xml -->

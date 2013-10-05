@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -27,9 +28,9 @@ public class UnitConverter extends Activity implements OnChildClickListener {
     private static final String TAG = UnitConverter.class.getName();
 
     public static EditText starting_number_input;
-    public static String starting_string;
-    public static double starting_value;
-    public static String final_value;
+    public static String starting_string = "0";
+    public static double starting_value = 0;
+    public static String final_value = "0";
     public static TextView text_view;
 
     @Override
@@ -37,6 +38,9 @@ public class UnitConverter extends Activity implements OnChildClickListener {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.unitconverterlayout);
+        starting_number_input = (EditText)findViewById(R.id.startingvalueinput);
+        starting_number_input.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        starting_number_input.setText(starting_string);
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -119,8 +123,15 @@ public class UnitConverter extends Activity implements OnChildClickListener {
     public static double mStartingValue() {
 
         starting_string = starting_number_input.getText().toString();
+        if (starting_string.equals("")) {
+            starting_string = "0";
+        }
 
-        if (!starting_string.equals(null)){
+        Log.d(TAG, "starting_string.equals(null) = " + starting_string.equals(null));
+        Log.d(TAG, "starting_string.equals = " + starting_string);
+
+
+        if (!starting_string.equals("")){
             starting_value = Double.parseDouble(starting_string);
         }
         return starting_value;

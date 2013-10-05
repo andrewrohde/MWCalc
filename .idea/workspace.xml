@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState>
+        <option name="visible" value="false" />
+      </GlobalState>
+    </option>
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="mwcalc" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4224c03c-e497-4ad0-b6d1-d7e340d2d9b8" name="Default" comment="" />
@@ -23,6 +33,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -59,7 +70,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -68,7 +78,82 @@
     <favorites_list name="MWCalc" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="UnitConverter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="125" column="36" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.26277372" vertical-offset="1890" max-vertical-offset="2628">
+              <folding>
+                <element signature="e#2187#2213#0" expanded="true" />
+                <element signature="e#2238#2264#0" expanded="true" />
+                <element signature="e#2289#2314#0" expanded="true" />
+                <element signature="e#2371#2379#0" expanded="true" />
+                <element signature="e#2430#2438#0" expanded="true" />
+                <element signature="e#2583#2591#0" expanded="true" />
+                <element signature="e#2613#2639#0" expanded="true" />
+                <element signature="e#2660#2686#0" expanded="true" />
+                <element signature="e#2707#2732#0" expanded="true" />
+                <element signature="e#2753#2778#0" expanded="true" />
+                <element signature="e#2926#2952#0" expanded="true" />
+                <element signature="e#2973#2999#0" expanded="true" />
+                <element signature="e#3145#3173#0" expanded="true" />
+                <element signature="e#3194#3222#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="childrow.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="22" selection-start="541" selection-end="541" vertical-scroll-proportion="-3.1153846" vertical-offset="189" max-vertical-offset="828">
+              <folding>
+                <element signature="e#1051#1072#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnitConversion.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConversion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="376" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/NewAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="2466">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConversionSelection.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/ConversionSelection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="45" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="50" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -416,6 +501,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../CoordinateRecorder" value="1380583882359" />
         <entry key="$PROJECT_DIR$/../CoordinateRecorderProject" value="1380058947216" />
+        <entry key="$PROJECT_DIR$" value="1380910429101" />
         <entry key="C:\Users\Andrew1\workspace\Android\MWCalc" value="1381010957973" />
       </map>
     </option>
@@ -428,21 +514,21 @@
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/FormatCalcValue.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/SavePreferences.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConversion.java" />
-        <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/ConversionSelection.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/HelpUI.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/NewAdapter.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/PreferencesUI.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/InterfaceUI.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml" />
+        <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -470,6 +556,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -546,6 +633,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCalc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -556,7 +699,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -577,7 +719,6 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.1.138:5555" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="GNEX" />
   </component>
   <component name="RunManager" selected="Android Application.MWCalc-MWCalc">
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -586,19 +727,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -626,6 +754,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -719,28 +860,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1280" height="745" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.8069307" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.4376013" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7293729" sideWeight="0.56239873" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6703297" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.27062705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -762,113 +904,64 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java">
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="521" selection-end="521" vertical-scroll-proportion="0.34735578" vertical-offset="0" max-vertical-offset="2601">
-          <folding>
-            <element signature="e#1933#1959#0" expanded="true" />
-            <element signature="e#1984#2010#0" expanded="true" />
-            <element signature="e#2035#2060#0" expanded="true" />
-            <element signature="e#2117#2125#0" expanded="true" />
-            <element signature="e#2176#2184#0" expanded="true" />
-            <element signature="e#2329#2337#0" expanded="true" />
-            <element signature="e#2359#2385#0" expanded="true" />
-            <element signature="e#2406#2432#0" expanded="true" />
-            <element signature="e#2453#2478#0" expanded="true" />
-            <element signature="e#2499#2524#0" expanded="true" />
-            <element signature="e#2672#2698#0" expanded="true" />
-            <element signature="e#2719#2745#0" expanded="true" />
-            <element signature="e#2891#2919#0" expanded="true" />
-            <element signature="e#2940#2968#0" expanded="true" />
-          </folding>
+        <state line="33" column="50" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="162" selection-end="162" vertical-scroll-proportion="0.18389423" vertical-offset="0" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/SavePreferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="56" selection-start="160" selection-end="160" vertical-scroll-proportion="0.20432693" vertical-offset="0" max-vertical-offset="832">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/FormatCalcValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/ButtonHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+        <state line="9" column="13" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="376" max-vertical-offset="918">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/ConversionSelection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="37" selection-start="2478" selection-end="2478" vertical-scroll-proportion="1.0216346" vertical-offset="0" max-vertical-offset="1105">
+        <state line="35" column="45" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/CalculatorMathOperations.java">
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="144" selection-end="144" vertical-scroll-proportion="0.14302884" vertical-offset="0" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/PreferencesUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="399" selection-end="399" vertical-scroll-proportion="0.28605768" vertical-offset="0" max-vertical-offset="1666">
+        <state line="15" column="22" selection-start="541" selection-end="541" vertical-scroll-proportion="-3.1153846" vertical-offset="189" max-vertical-offset="828">
           <folding>
-            <element signature="e#1585#1968#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
+            <element signature="e#1051#1072#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/HelpUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="64" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="1088">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/InterfaceUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="514" column="68" selection-start="16939" selection-end="16939" vertical-scroll-proportion="1.2115384" vertical-offset="7730" max-vertical-offset="10030">
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/NewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="9" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.28846154" vertical-offset="816" max-vertical-offset="2550">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#662#670#0" expanded="true" />
-          </folding>
+        <state line="72" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="2466">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="50" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.63461536" vertical-offset="0" max-vertical-offset="884">
+        <state line="125" column="36" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.26277372" vertical-offset="1890" max-vertical-offset="2628">
           <folding>
-            <element signature="e#462#480#0" expanded="true" />
-            <element signature="e#531#549#0" expanded="true" />
-            <element signature="e#1119#1137#0" expanded="true" />
+            <element signature="e#2187#2213#0" expanded="true" />
+            <element signature="e#2238#2264#0" expanded="true" />
+            <element signature="e#2289#2314#0" expanded="true" />
+            <element signature="e#2371#2379#0" expanded="true" />
+            <element signature="e#2430#2438#0" expanded="true" />
+            <element signature="e#2583#2591#0" expanded="true" />
+            <element signature="e#2613#2639#0" expanded="true" />
+            <element signature="e#2660#2686#0" expanded="true" />
+            <element signature="e#2707#2732#0" expanded="true" />
+            <element signature="e#2753#2778#0" expanded="true" />
+            <element signature="e#2926#2952#0" expanded="true" />
+            <element signature="e#2973#2999#0" expanded="true" />
+            <element signature="e#3145#3173#0" expanded="true" />
+            <element signature="e#3194#3222#0" expanded="true" />
           </folding>
         </state>
       </provider>

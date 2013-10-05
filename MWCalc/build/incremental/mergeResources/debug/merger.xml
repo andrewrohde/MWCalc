@@ -2,126 +2,9 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res" >
+        <source path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res" >
             <file
-                name="ic_launcher"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable-hdpi\ic_launcher.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="ic_launcher"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable-mdpi\ic_launcher.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="ic_launcher"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable-xhdpi\ic_launcher.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\values\strings.xml"
-                qualifiers="" >
-                <string name="three" >3
-                </string>
-                <string name="equals" >=
-                </string>
-                <string name="website_hint" >Click to open the developer\'s website
-                </string>
-                <string name="addition" >+
-                </string>
-                <string name="nine" >9
-                </string>
-                <string name="kmtomi" >km to mi
-                </string>
-                <string name="wall_change" >Change Wallpaper
-                </string>
-                <string name="kgtolb" >kg to lb
-                </string>
-                <string name="mphtokph" >mph to kph
-                </string>
-                <string name="pref_wall_change" >Let\'s change this background!
-                </string>
-                <string name="six" >6
-                </string>
-                <string name="decimal" >.
-                </string>
-                <string name="seven" >7
-                </string>
-                <string name="multiplication" >*
-                </string>
-                <string name="lbtokg" >lb to kg
-                </string>
-                <string name="two" >2
-                </string>
-                <string name="hello_world" >Hello World
-                </string>
-                <string name="eight" >8
-                </string>
-                <string name="weight" >Weight
-                </string>
-                <string name="calculator_text_view" >Number Goes Here
-                </string>
-                <string name="help" >Help
-                </string>
-                <string name="unitconverter" >Unit Converter
-                </string>
-                <string name="fttom" >ft to m
-                </string>
-                <string name="one" >1
-                </string>
-                <string name="five" >5
-                </string>
-                <string name="zero" >0
-                </string>
-                <string name="four" >4
-                </string>
-                <string name="mitokm" >mi to km
-                </string>
-                <string name="mtoft" >m to ft
-                </string>
-                <string name="kphtomph" >kph to mph
-                </string>
-                <string name="settings" >Settings
-                </string>
-                <string name="length" >Length
-                </string>
-                <string name="subtraction" >-
-                </string>
-                <string name="app_name" >MWCalc
-                </string>
-                <string name="speed" >Speed
-                </string>
-                <string name="startingvalue" >Starting Value
-                </string>
-                <string name="division" >/
-                </string>
-                <string name="clear" >Clear
-                </string>
-            </file>
-            <file
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\values\styles.xml"
-                qualifiers="" >
-
-                <style
-                    name="AppBaseTheme"
-                    parent="android:Theme.Light" >
-
-                    <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-                    -->
-                </style>
-
-                <style
-                    name="AppTheme"
-                    parent="AppBaseTheme" >
-
-                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-                </style>
-            </file>
-            <file
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\values-v11\styles.xml"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -132,7 +15,7 @@
                 </style>
             </file>
             <file
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\values-v14\styles.xml"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values-v14/styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -143,79 +26,324 @@
                 </style>
             </file>
             <file
-                name="grouprow"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\grouprow.xml"
+                name="subtraction_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/subtraction_button_icon.png"
                 qualifiers=""
-                type="layout" />
+                type="drawable" />
             <file
-                name="number_zero_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_zero_button_icon.png"
+                name="number_one_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_one_button_selector.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="division_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\division_button_icon.png"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/division_button_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
-                name="number_two_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_two_button_selector.xml"
+                name="number_zero_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_zero_button_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
-                name="number_eight_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_eight_button_selector.xml"
+                name="addition_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/addition_button_selector.xml"
                 qualifiers=""
                 type="drawable" />
             <file
-                name="right_ui_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\right_ui_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_three_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_three_button_selector.xml"
+                name="rainbow_background"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/rainbow_background.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="number_two_button"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_two_button.png"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_two_button.png"
                 qualifiers=""
                 type="drawable" />
             <file
-                name="mult_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\mult_button_icon.png"
+                name="plus_minus_list_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/plus_minus_list_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="left_ui_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/left_ui_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_six_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_six_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_zero_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_zero_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_squared_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_squared_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_two_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_two_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_eight_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_eight_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_six_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_six_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="addition_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/addition_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_eight_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_eight_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="decimal_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/decimal_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_four_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_four_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="button_selected"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/button_selected.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="right_ui_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/right_ui_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="left_ui_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/left_ui_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="left_arrow"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/left_arrow.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_nine_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_nine_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="clear_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/clear_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="background_math_final"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/background_math_final.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="sqrt_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/sqrt_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_five_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_five_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_squared_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_squared_button_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="number_four_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_four_button_icon.png"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_four_button_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\values\colors.xml"
+                name="equals_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/equals_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="decimal_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/decimal_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_three_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_three_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="delete_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/delete_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_one_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_one_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="right_ui_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/right_ui_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="delete_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/delete_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mult_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/mult_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_nine_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_nine_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="right_arrow"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/right_arrow.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_three_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_three_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="equals_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/equals_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="sqrt_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/sqrt_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mult_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/mult_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="text_bar"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/text_bar.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="button_icon_pressed"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/button_icon_pressed.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_five_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_five_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mwcalc_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/mwcalc_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_seven_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_seven_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="number_seven_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/number_seven_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="division_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/division_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="subtraction_button_selector"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/subtraction_button_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="clear_button_icon"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/clear_button_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="activity_menu"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/menu/activity_menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="write_arrow"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable-hdpi/write_arrow.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="minus"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable-hdpi/minus.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="plus"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable-hdpi/plus.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/colors.xml"
                 qualifiers="" >
                 <color name="GhostWhite" >#F8F8FF
                 </color>
-                <color name="Olive" >#808000
-                </color>
                 <color name="MediumVioletRed" >#C71585
                 </color>
-                <color name="Navy" >#000080
-                </color>
-                <color name="Aqua" >#00FFFF
-                </color>
-                <color name="HotPink" >#FF69B4
-                </color>
-                <color name="Ivory" >#FFFFF0
+                <color name="Olive" >#808000
                 </color>
                 <color name="LightYellow" >#FFFFE0
                 </color>
+                <color name="Ivory" >#FFFFF0
+                </color>
+                <color name="HotPink" >#FF69B4
+                </color>
+                <color name="Aqua" >#00FFFF
+                </color>
+                <color name="Navy" >#000080
+                </color>
                 <color name="PaleGoldenrod" >#EEE8AA
                 </color>
-                <color name="DarkRed" >#8B0000
-                </color>
                 <color name="MediumPurple" >#9370DB
+                </color>
+                <color name="DarkRed" >#8B0000
                 </color>
                 <color name="Khaki" >#F0E68C
                 </color>
@@ -241,29 +369,29 @@
                 </color>
                 <color name="Violet" >#EE82EE
                 </color>
+                <color name="Azure" >#F0FFFF
+                </color>
+                <color name="red" >#FF0000
+                </color>
                 <color name="MistyRose" >#FFE4E1
                 </color>
                 <color name="aqua" >#00FFFF
                 </color>
-                <color name="red" >#FF0000
-                </color>
-                <color name="Azure" >#F0FFFF
-                </color>
                 <color name="Crimson" >#DC143C
-                </color>
-                <color name="DarkMagenta" >#8B008B
-                </color>
-                <color name="Chocolate" >#D2691E
                 </color>
                 <color name="MediumOrchid" >#BA55D3
                 </color>
-                <color name="maroon" >#800000
+                <color name="Chocolate" >#D2691E
+                </color>
+                <color name="DarkMagenta" >#8B008B
                 </color>
                 <color name="RosyBrown" >#BC8F8F
                 </color>
-                <color name="Purple" >#800080
+                <color name="maroon" >#800000
                 </color>
                 <color name="DarkSeaGreen" >#8FBC8F
+                </color>
+                <color name="Purple" >#800080
                 </color>
                 <color name="PeachPuff" >#FFDAB9
                 </color>
@@ -275,19 +403,19 @@
                 </color>
                 <color name="YellowGreen" >#9ACD32
                 </color>
-                <color name="RoyalBlue" >#4169E1
+                <color name="AliceBlue" >#F0F8FF
                 </color>
                 <color name="NavajoWhite" >#FFDEAD
                 </color>
-                <color name="AliceBlue" >#F0F8FF
+                <color name="RoyalBlue" >#4169E1
                 </color>
                 <color name="PapayaWhip" >#FFEFD5
                 </color>
                 <color name="CornflowerBlue" >#6495ED
                 </color>
-                <color name="Coral" >#FF7F50
-                </color>
                 <color name="FloralWhite" >#FFFAF0
+                </color>
+                <color name="Coral" >#FF7F50
                 </color>
                 <color name="Lime" >#00FF00
                 </color>
@@ -387,15 +515,15 @@
                 </color>
                 <color name="DarkGray" >#A9A9A9
                 </color>
-                <color name="LightCyan" >#E0FFFF
-                </color>
                 <color name="LightGrey" >#D3D3D3
+                </color>
+                <color name="LightCyan" >#E0FFFF
                 </color>
                 <color name="DarkKhaki" >#BDB76B
                 </color>
-                <color name="LawnGreen" >#7CFC00
-                </color>
                 <color name="black" >#000000
+                </color>
+                <color name="LawnGreen" >#7CFC00
                 </color>
                 <color name="Gray" >#808080
                 </color>
@@ -403,9 +531,9 @@
                 </color>
                 <color name="Beige" >#F5F5DC
                 </color>
-                <color name="LimeGreen" >#32CD32
-                </color>
                 <color name="blue" >#0000FF
+                </color>
+                <color name="LimeGreen" >#32CD32
                 </color>
                 <color name="navy" >#000080
                 </color>
@@ -415,25 +543,25 @@
                 </color>
                 <color name="SlateBlue" >#6A5ACD
                 </color>
-                <color name="SkyBlue" >#87CEEB
-                </color>
                 <color name="PaleGreen" >#98FB98
+                </color>
+                <color name="SkyBlue" >#87CEEB
                 </color>
                 <color name="purple" >#800080
                 </color>
-                <color name="LightSeaGreen" >#20B2AA
-                </color>
                 <color name="Tomato" >#FF6347
                 </color>
-                <color name="Turquoise" >#40E0D0
+                <color name="LightSeaGreen" >#20B2AA
                 </color>
                 <color name="Yellow" >#FFFF00
                 </color>
+                <color name="Turquoise" >#40E0D0
+                </color>
                 <color name="White" >#FFFFFF
                 </color>
-                <color name="Teal" >#008080
-                </color>
                 <color name="DarkOliveGreen" >#556B2F
+                </color>
+                <color name="Teal" >#008080
                 </color>
                 <color name="Linen" >#FAF0E6
                 </color>
@@ -463,15 +591,15 @@
                 </color>
                 <color name="Salmon" >#FA8072
                 </color>
-                <color name="MediumSpringGreen" >#00FA9A
+                <color name="Plum" >#DDA0DD
                 </color>
                 <color name="BlanchedAlmond" >#FFEBCD
                 </color>
-                <color name="Plum" >#DDA0DD
-                </color>
-                <color name="FireBrick" >#B22222
+                <color name="MediumSpringGreen" >#00FA9A
                 </color>
                 <color name="LightBlue" >#ADD8E6
+                </color>
+                <color name="FireBrick" >#B22222
                 </color>
                 <color name="MediumAquamarine" >#66CDAA
                 </color>
@@ -491,272 +619,107 @@
                 </color>
                 <color name="gray" >#808080
                 </color>
-                <color name="MidnightBlue" >#191970
-                </color>
                 <color name="Wheat" >#F5DEB3
+                </color>
+                <color name="MidnightBlue" >#191970
                 </color>
                 <color name="yellow" >#FFFF00
                 </color>
-                <color name="ForestGreen" >#228B22
-                </color>
                 <color name="Red" >#FF0000
                 </color>
-                <color name="LavenderBlush" >#FFF0F5
+                <color name="ForestGreen" >#228B22
                 </color>
                 <color name="white" >#FFFFFF
                 </color>
-                <color name="SlateGray" >#708090
+                <color name="LavenderBlush" >#FFF0F5
                 </color>
                 <color name="SandyBrown" >#F4A460
                 </color>
+                <color name="SlateGray" >#708090
+                </color>
             </file>
             <file
-                name="number_six_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_six_button_icon.png"
-                qualifiers=""
-                type="drawable" />
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="three" >3
+                </string>
+                <string name="equals" >=
+                </string>
+                <string name="website_hint" >Click to open the developer\'s website
+                </string>
+                <string name="addition" >+
+                </string>
+                <string name="nine" >9
+                </string>
+                <string name="kmtomi" >km to mi
+                </string>
+                <string name="wall_change" >Change Wallpaper
+                </string>
+                <string name="kgtolb" >kg to lb
+                </string>
+                <string name="mphtokph" >mph to kph
+                </string>
+                <string name="pref_wall_change" >Let\'s change this background!
+                </string>
+                <string name="six" >6
+                </string>
+                <string name="decimal" >.
+                </string>
+                <string name="seven" >7
+                </string>
+                <string name="multiplication" >*
+                </string>
+                <string name="lbtokg" >lb to kg
+                </string>
+                <string name="two" >2
+                </string>
+                <string name="hello_world" >Hello World
+                </string>
+                <string name="eight" >8
+                </string>
+                <string name="weight" >Weight
+                </string>
+                <string name="calculator_text_view" >Number Goes Here
+                </string>
+                <string name="help" >Help
+                </string>
+                <string name="unitconverter" >Unit Converter
+                </string>
+                <string name="fttom" >ft to m
+                </string>
+                <string name="five" >5
+                </string>
+                <string name="one" >1
+                </string>
+                <string name="zero" >0
+                </string>
+                <string name="four" >4
+                </string>
+                <string name="mitokm" >mi to km
+                </string>
+                <string name="mtoft" >m to ft
+                </string>
+                <string name="kphtomph" >kph to mph
+                </string>
+                <string name="settings" >Settings
+                </string>
+                <string name="length" >Length
+                </string>
+                <string name="subtraction" >-
+                </string>
+                <string name="app_name" >MWCalc
+                </string>
+                <string name="speed" >Speed
+                </string>
+                <string name="startingvalue" >Starting Value
+                </string>
+                <string name="division" >/
+                </string>
+                <string name="clear" >Clear
+                </string>
+            </file>
             <file
-                name="number_one_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_one_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="delete_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\delete_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="write_arrow"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable-hdpi\write_arrow.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="clear_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\clear_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="sqrt_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\sqrt_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_five_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_five_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="sqrt_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\sqrt_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_three_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_three_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_one_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_one_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="left_ui_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\left_ui_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="rainbow_background"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\rainbow_background.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="childrow"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\childrow.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="button_icon_pressed"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\button_icon_pressed.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_squared_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_squared_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_squared_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_squared_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_zero_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_zero_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="background_math_final"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\background_math_final.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="delete_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\delete_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="addition_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\addition_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_eight_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_eight_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="plus"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable-hdpi\plus.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="keypad_right"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\keypad_right.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="mult_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\mult_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="right_ui_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\right_ui_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="equals_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\equals_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="right_arrow"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\right_arrow.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="unitconverterlayout"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\unitconverterlayout.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="left_arrow"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\left_arrow.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="clear_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\clear_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="calculator_ui"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\calculator_ui.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="activity_menu"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\menu\activity_menu.xml"
-                qualifiers=""
-                type="menu" />
-            <file
-                name="plus_minus_list_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\plus_minus_list_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="decimal_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\decimal_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_six_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_six_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_nine_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_nine_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="button_selected"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\button_selected.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="subtraction_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\subtraction_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="decimal_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\decimal_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="keypad_left"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\keypad_left.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="number_five_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_five_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="equals_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\equals_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_seven_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_seven_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="division_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\division_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="help"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\help.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="mwcalc_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\mwcalc_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="subtraction_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\subtraction_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="number_seven_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_seven_button_selector.xml"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="addition_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\addition_button_icon.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\values\dimensions.xml"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/dimensions.xml"
                 qualifiers="" >
                 <dimen name="button_height" >140px
                 </dimen>
@@ -764,40 +727,77 @@
                 </dimen>
             </file>
             <file
-                name="minus"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable-hdpi\minus.png"
-                qualifiers="hdpi"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                name="ic_launcher"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
                 type="drawable" />
             <file
-                name="preferenceslayout"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\layout\preferenceslayout.xml"
+                name="childrow"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/childrow.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                name="text_bar"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\text_bar.png"
+                name="help"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/help.xml"
                 qualifiers=""
-                type="drawable" />
+                type="layout" />
             <file
-                name="number_nine_button_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_nine_button_icon.png"
+                name="calculator_ui"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/calculator_ui.xml"
                 qualifiers=""
-                type="drawable" />
+                type="layout" />
             <file
-                name="number_four_button_selector"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\number_four_button_selector.xml"
+                name="unitconverterlayout"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/unitconverterlayout.xml"
                 qualifiers=""
-                type="drawable" />
+                type="layout" />
             <file
-                name="left_ui_icon"
-                path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\main\res\drawable\left_ui_icon.png"
+                name="keypad_left"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/keypad_left.xml"
                 qualifiers=""
-                type="drawable" />
+                type="layout" />
+            <file
+                name="keypad_right"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/keypad_right.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="preferenceslayout"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/preferenceslayout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="grouprow"
+                path="/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/layout/grouprow.xml"
+                qualifiers=""
+                type="layout" />
         </source>
-        <source path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\build\res\rs\debug" />
+        <source path="/home/andrew/workspace/android/MWCalc/MWCalc/build/res/rs/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="C:\Users\Andrew1\workspace\Android\MWCalc\MWCalc\src\debug\res" />
+        <source path="/home/andrew/workspace/android/MWCalc/MWCalc/src/debug/res" />
     </dataSet>
 
 </merger>
