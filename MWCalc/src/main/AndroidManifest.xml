@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.madwindevelopers.mwcalc"
+          package="com.madwin.mwcalc"
           android:versionCode="1"
           android:versionName="1.0" >
 
      <uses-sdk
-        android:minSdkVersion="17"
+        android:minSdkVersion="16"
         android:targetSdkVersion="18"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -15,7 +15,7 @@
         android:label="@string/app_name" >
             <activity
             android:label="@string/app_name"
-            android:name="com.madwindevelopers.mwcalc.InterfaceUI"
+            android:name="com.madwin.mwcalc.InterfaceUI"
             android:screenOrientation="sensor"
             android:theme="@android:style/Theme.NoTitleBar"
                 android:windowSoftInputMode="stateAlwaysHidden">
@@ -25,13 +25,13 @@
                     <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
             </activity>
-        <activity android:name="com.madwindevelopers.mwcalc.PreferencesUI"
+        <activity android:name="com.madwin.mwcalc.PreferencesUI"
                 android:label="@string/settings"
                 android:windowSoftInputMode="stateAlwaysHidden"/>
-         <activity android:name="com.madwindevelopers.mwcalc.HelpUI"
+         <activity android:name="com.madwin.mwcalc.HelpUI"
                  android:label="About"
                  android:windowSoftInputMode="stateAlwaysHidden"/>
-         <activity android:name="com.madwindevelopers.mwcalc.UnitConverter"
+         <activity android:name="com.madwin.mwcalc.UnitConverter"
                 android:label="Unit Converter"/>
 
      </application>

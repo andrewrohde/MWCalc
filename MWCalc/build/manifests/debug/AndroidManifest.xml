@@ -1,20 +1,20 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.madwindevelopers.mwcalc">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.madwin.mwcalc">
 
      <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="18"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
      <application android:icon="@drawable/mwcalc_icon" android:label="@string/app_name">
-            <activity android:label="@string/app_name" android:name="com.madwindevelopers.mwcalc.InterfaceUI" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <activity android:label="@string/app_name" android:name="com.madwin.mwcalc.InterfaceUI" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN"/>
 
                     <category android:name="android.intent.category.LAUNCHER"/>
                 </intent-filter>
             </activity>
-        <activity android:label="@string/settings" android:name="com.madwindevelopers.mwcalc.PreferencesUI" android:windowSoftInputMode="stateAlwaysHidden"/>
-         <activity android:label="About" android:name="com.madwindevelopers.mwcalc.HelpUI" android:windowSoftInputMode="stateAlwaysHidden"/>
-         <activity android:label="Unit Converter" android:name="com.madwindevelopers.mwcalc.UnitConverter"/>
+        <activity android:label="@string/settings" android:name="com.madwin.mwcalc.PreferencesUI" android:windowSoftInputMode="stateAlwaysHidden"/>
+         <activity android:label="About" android:name="com.madwin.mwcalc.HelpUI" android:windowSoftInputMode="stateAlwaysHidden"/>
+         <activity android:label="Unit Converter" android:name="com.madwin.mwcalc.UnitConverter"/>
 
      </application>
 
