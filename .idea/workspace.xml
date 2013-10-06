@@ -78,82 +78,7 @@
     <favorites_list name="MWCalc" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="UnitConverter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="36" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.26277372" vertical-offset="1890" max-vertical-offset="2628">
-              <folding>
-                <element signature="e#2187#2213#0" expanded="true" />
-                <element signature="e#2238#2264#0" expanded="true" />
-                <element signature="e#2289#2314#0" expanded="true" />
-                <element signature="e#2371#2379#0" expanded="true" />
-                <element signature="e#2430#2438#0" expanded="true" />
-                <element signature="e#2583#2591#0" expanded="true" />
-                <element signature="e#2613#2639#0" expanded="true" />
-                <element signature="e#2660#2686#0" expanded="true" />
-                <element signature="e#2707#2732#0" expanded="true" />
-                <element signature="e#2753#2778#0" expanded="true" />
-                <element signature="e#2926#2952#0" expanded="true" />
-                <element signature="e#2973#2999#0" expanded="true" />
-                <element signature="e#3145#3173#0" expanded="true" />
-                <element signature="e#3194#3222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="childrow.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="541" selection-end="541" vertical-scroll-proportion="-3.1153846" vertical-offset="189" max-vertical-offset="828">
-              <folding>
-                <element signature="e#1051#1072#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnitConversion.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConversion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="376" max-vertical-offset="918">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/NewAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="2466">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConversionSelection.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/ConversionSelection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="45" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="50" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -518,10 +443,11 @@
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/HelpUI.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/NewAdapter.java" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/PreferencesUI.java" />
-        <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/InterfaceUI.java" />
-        <option value="$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml" />
         <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java" />
+        <option value="$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/InterfaceUI.java" />
+        <option value="$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/MWCalc/build.gradle" />
       </list>
     </option>
   </component>
@@ -556,7 +482,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -700,6 +625,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -709,7 +635,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="reference.settingsdialog.project.gradle" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -727,6 +653,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -754,19 +693,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -851,6 +777,28 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4224c03c-e497-4ad0-b6d1-d7e340d2d9b8" name="Default" comment="" />
@@ -861,12 +809,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="745" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.8069307" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.8069307" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -875,13 +823,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7293729" sideWeight="0.56239873" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4570957" sideWeight="0.56239873" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.27062705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5429043" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -904,9 +852,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="50" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
+        <state line="125" column="36" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="2628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
           <folding />
         </state>
       </provider>
@@ -918,6 +876,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/NewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="2754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/ConversionSelection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="45" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="50" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/ConversionSelection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="45" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1170">
@@ -925,44 +904,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="541" selection-end="541" vertical-scroll-proportion="-3.1153846" vertical-offset="189" max-vertical-offset="828">
-          <folding>
-            <element signature="e#1051#1072#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/NewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="2466">
+        <state line="72" column="0" selection-start="2242" selection-end="2242" vertical-scroll-proportion="-0.89403975" vertical-offset="1296" max-vertical-offset="2466">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="122" selection-end="122" vertical-scroll-proportion="-0.7086093" vertical-offset="376" max-vertical-offset="918">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/UnitConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="36" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.26277372" vertical-offset="1890" max-vertical-offset="2628">
-          <folding>
-            <element signature="e#2187#2213#0" expanded="true" />
-            <element signature="e#2238#2264#0" expanded="true" />
-            <element signature="e#2289#2314#0" expanded="true" />
-            <element signature="e#2371#2379#0" expanded="true" />
-            <element signature="e#2430#2438#0" expanded="true" />
-            <element signature="e#2583#2591#0" expanded="true" />
-            <element signature="e#2613#2639#0" expanded="true" />
-            <element signature="e#2660#2686#0" expanded="true" />
-            <element signature="e#2707#2732#0" expanded="true" />
-            <element signature="e#2753#2778#0" expanded="true" />
-            <element signature="e#2926#2952#0" expanded="true" />
-            <element signature="e#2973#2999#0" expanded="true" />
-            <element signature="e#3145#3173#0" expanded="true" />
-            <element signature="e#3194#3222#0" expanded="true" />
-          </folding>
+        <state line="144" column="21" selection-start="4634" selection-end="4634" vertical-scroll-proportion="6.07947" vertical-offset="432" max-vertical-offset="2628">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/res/layout/childrow.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="541" selection-end="541" vertical-scroll-proportion="0.29347825" vertical-offset="189" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="36" selection-start="216" selection-end="216" vertical-scroll-proportion="0.23841059" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/src/main/java/com/madwin/mwcalc/InterfaceUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="414" column="39" selection-start="12762" selection-end="12762" vertical-scroll-proportion="1.5605537" vertical-offset="5993" max-vertical-offset="9666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MWCalc/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="355" selection-end="355" vertical-scroll-proportion="1.013245" vertical-offset="108" max-vertical-offset="594">
+          <folding />
         </state>
       </provider>
     </entry>

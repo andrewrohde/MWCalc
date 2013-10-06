@@ -411,10 +411,13 @@ public class InterfaceUI extends Activity {
         display.setText(FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
                         current_display_value)));
 
+        if (first_number == 0){
+            previous_value.setText("");
 
-        previous_value.setText(
-                FormatCalcValue.mRemoveTrailingPointZero(Double.toString(first_number)));
-
+        } else {
+            previous_value.setText(
+                    FormatCalcValue.mRemoveTrailingPointZero(Double.toString(first_number)));
+        }
         if(wallpaper_checker == true){
             calculator_layout.setBackground(getResources()
                     .getDrawable(R.drawable.background_math_final));
