@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/minus" android:state_checked="true"></item>
-    <item android:drawable="@drawable/plus"></item>
-
-</selector><!-- From: file:/home/andrew/workspace/android/MWCalc/MWCalc/src/main/res/drawable/plus_minus_list_selector.xml -->
