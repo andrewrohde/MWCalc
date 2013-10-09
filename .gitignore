@@ -35,3 +35,4 @@ local.properties
 gradle/*
 gradlew
 gradlew.bat
+MWCalc.iml
