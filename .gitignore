@@ -31,3 +31,7 @@ local.properties
 *.ipr
 *~
 *.swp
+*.settings
+gradle/*
+gradlew
+gradlew.bat
