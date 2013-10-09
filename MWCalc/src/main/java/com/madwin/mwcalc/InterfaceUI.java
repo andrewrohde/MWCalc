@@ -283,11 +283,12 @@ public class InterfaceUI extends Activity {
     private View.OnClickListener equalsListener = new View.OnClickListener() {
         public void onClick(View v)  {
 
-
+            String a = current_display_value;
 
 
             current_display_value = CalculatorMathOperations.mEqualsTask(operator_selection,
                     current_display_value, first_number);
+            first_number = Double.parseDouble(a);
             mUpdateDisplay();
             //last_button = 3;
         }
