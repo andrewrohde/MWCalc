@@ -1,3 +1,12 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+
+
+/build
+
+
 # built application files
 *.apk
 *.ap_
@@ -31,8 +40,3 @@ local.properties
 *.ipr
 *~
 *.swp
-*.settings
-gradle/*
-gradlew
-gradlew.bat
-MWCalc.iml
