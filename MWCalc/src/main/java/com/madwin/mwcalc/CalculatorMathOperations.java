@@ -5,7 +5,7 @@ package com.madwin.mwcalc;
  * This class file handles all mathematical operations.
  */
 
-public final class CalculatorMathOperations {
+public class CalculatorMathOperations {
 
 
     public static String mEqualsTask(int operator_selection,

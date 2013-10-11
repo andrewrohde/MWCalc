@@ -15,6 +15,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 
 public class InterfaceUI extends Activity {
@@ -42,13 +47,26 @@ public class InterfaceUI extends Activity {
         layout_side = 1;
         mAddKeypadLayout();
 
+
+
+        if (Character.toString((getPreference("background_enabled=", "preferences.txt").charAt(
+                getPreference("background_enabled=", "preferences.txt").length() - 1))).equals("0"))
+        {
+            wallpaper_checker = false;
+        } else {
+            wallpaper_checker = true;
+        }
+
+
+        /*
+
         if (getIntent().getExtras() != null){
             Bundle extras = getIntent().getExtras();
             wallpaper_checker = extras.getBoolean("wallpaper_checker");
             Log.d(TAG, "wallpaper_checker from bundle = " + wallpaper_checker);
         } else {
             wallpaper_checker = false;
-        }
+        }*/
         mUpdateDisplay();
 
         mButtonSetup();
@@ -510,7 +528,7 @@ public class InterfaceUI extends Activity {
     public void mShowSettings() {
         Log.d(TAG, "wallpaper_checker entering preferences = " + wallpaper_checker);
         Intent Preferences = new Intent(getBaseContext(), com.madwin.mwcalc.PreferencesUI.class);
-        Preferences.putExtra("wallpaper_checker", wallpaper_checker);
+      //  Preferences.putExtra("wallpaper_checker", wallpaper_checker);
         this.startActivity(Preferences);
         finish();
     }
@@ -584,6 +602,40 @@ public class InterfaceUI extends Activity {
            last_button = 1;
        }
     }
+
+    String getPreference(String get_preference, String preferences_filename) {
+        String TAG = "MWCalc";
+
+        String ret = "";
+
+        try {
+            InputStream inputStream = openFileInput(preferences_filename);
+
+            if ( inputStream != null ) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                String receiveString = get_preference;
+                StringBuilder stringBuilder = new StringBuilder();
+
+                while ( (receiveString = bufferedReader.readLine()) != null ) {
+                    stringBuilder.append(receiveString);
+                }
+
+                inputStream.close();
+                ret = stringBuilder.toString();
+            }
+        }
+        catch (FileNotFoundException e) {
+            Log.e("login activity", "File not found: " + e.toString());
+        } catch (IOException e) {
+            Log.e("login activity", "Can not read file: " + e.toString());
+        }
+
+        Log.d(TAG, "read_preference = " + ret);
+
+        return ret;
+    }
+
 
 
 }
