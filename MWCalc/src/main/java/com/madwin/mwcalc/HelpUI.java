@@ -29,6 +29,8 @@ public void onCreate(Bundle savedInstanceState){
     company_website.setOnClickListener(websiteListener);
 
 
+
+
 }
 
     private View.OnClickListener websiteListener = new View.OnClickListener() {
@@ -45,7 +47,6 @@ public void onCreate(Bundle savedInstanceState){
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Intent back_to_calc = new Intent(this, com.madwin.mwcalc.InterfaceUI.class);
             this.startActivity(back_to_calc);
-
             finish();
         }
         return super.onKeyUp(keyCode, event);

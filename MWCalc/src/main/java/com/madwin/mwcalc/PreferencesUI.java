@@ -51,6 +51,11 @@ public class PreferencesUI extends Activity {
         wall_checkBox.setOnClickListener(wallCheckBoxListener);
         wall_checkBox.setChecked(wallpaper_checker);
 
+
+        // Add setting for left - right hand calculator layout
+
+
+
     }
 
     private View.OnClickListener wallCheckBoxListener = new View.OnClickListener() {
@@ -72,6 +77,13 @@ public class PreferencesUI extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
         Intent back_to_calc = new Intent(this, InterfaceUI.class);
         back_to_calc.putExtra("wallpaper_checker", pass_wall_check);
+
+                            /* ADD Code to save preferences to file
+
+
+
+             */
+
         this.startActivity(back_to_calc);
         finish();
         return true;
@@ -82,8 +94,14 @@ public class PreferencesUI extends Activity {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Intent back_to_calc = new Intent(this, InterfaceUI.class);
             back_to_calc.putExtra("wallpaper_checker", pass_wall_check);
-            this.startActivity(back_to_calc);
 
+                        /* ADD Code to save preferences to file
+
+
+
+             */
+
+            this.startActivity(back_to_calc);
             finish();
         }
         return super.onKeyUp(keyCode, event);
