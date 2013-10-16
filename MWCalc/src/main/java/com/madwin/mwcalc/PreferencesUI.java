@@ -37,9 +37,9 @@ public class PreferencesUI extends Activity {
     File file;
     //String preferences_location = "/data/data/com.madwin.MWCalc/preferences/";
     String preferences_filename = "preferences.txt";
-    String background_save_string;
+    String background_save_string = "";
     String background_preference = "background_enabled=";
-    Boolean wallpaper_checker;
+    Boolean wallpaper_checker = false;
 
 
 
@@ -52,24 +52,18 @@ public class PreferencesUI extends Activity {
         //mCreatePreferencesFile();
 
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        if (mCheckSettingsFile()){
         background_save_string = getPreference(
                 background_preference, preferences_filename);
-
-
-        Log.d(TAG, "background_save_string.charAt(background_save_string.length() - 1) = "
-                + background_save_string.charAt(background_save_string.length() - 1));
-
-        if (Character.toString((background_save_string.charAt(
-                background_save_string.length() - 1))).equals("0")) {
-
-            wallpaper_checker = false;
-
-        } else {
-
-            wallpaper_checker = true;
-
         }
 
+        //Log.d(TAG, "background_save_string.charAt(background_save_string.length() - 1) = "
+        //        + background_save_string.charAt(background_save_string.length() - 1));
+        if (mCheckSettingsFile()) {
+        wallpaper_checker = !Character.toString((background_save_string.charAt(
+                background_save_string.length() - 1))).equals("0");
+        }
         Log.d(TAG, "background_save_string = " + background_save_string);
 
         ActionBar actionBar = getActionBar();
@@ -214,6 +208,11 @@ public class PreferencesUI extends Activity {
         return ret;
     }
 
+    Boolean mCheckSettingsFile(){
+        File file = new File("/data/data/com.madwin.mwcalc/files/preferences.txt");
+
+        return file.exists();
+    }
 
 
 

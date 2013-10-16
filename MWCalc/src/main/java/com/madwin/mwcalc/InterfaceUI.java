@@ -16,26 +16,28 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.prefs.Preferences;
 
 
 public class InterfaceUI extends Activity {
 
 
-    private static final String TAG = InterfaceUI.class.getName();
-    private static String current_display_value = null;
-    private static int operator_selection;
-    private static double first_number = 0;
-    private static Boolean wallpaper_checker;
-    private static int button_height;
-    private static int button_width;
-    private static int layout_side;
+    private final String TAG = InterfaceUI.class.getName();
+    private String current_display_value = "";
+    private int operator_selection;
+    private double first_number = 0;
+    private Boolean wallpaper_checker = false;
+    private int button_height;
+    private int button_width;
+    private int layout_side;
     ViewGroup.LayoutParams params;
-    private static int add_keypad_counter;
-    private static int last_button; // 1 for number, 2 for operator, 3 for equals
+    private int add_keypad_counter;
+    private int last_button; // 1 for number, 2 for operator, 3 for equals
 
 
     @Override
@@ -47,26 +49,13 @@ public class InterfaceUI extends Activity {
         layout_side = 1;
         mAddKeypadLayout();
 
+        if(mCheckSettingsFile()){
 
 
-        if (Character.toString((getPreference("background_enabled=", "preferences.txt").charAt(
-                getPreference("background_enabled=", "preferences.txt").length() - 1))).equals("0"))
-        {
-            wallpaper_checker = false;
-        } else {
-            wallpaper_checker = true;
+        wallpaper_checker = !Character.toString((getPreference("background_enabled=", "preferences.txt").charAt(
+                getPreference("background_enabled=", "preferences.txt").length() - 1))).equals("0");
         }
 
-
-        /*
-
-        if (getIntent().getExtras() != null){
-            Bundle extras = getIntent().getExtras();
-            wallpaper_checker = extras.getBoolean("wallpaper_checker");
-            Log.d(TAG, "wallpaper_checker from bundle = " + wallpaper_checker);
-        } else {
-            wallpaper_checker = false;
-        }*/
         mUpdateDisplay();
 
         mButtonSetup();
@@ -222,12 +211,14 @@ public class InterfaceUI extends Activity {
 
             try{
             if (!current_display_value.contains(current_selection) &&
-                    !current_display_value.equals(null) && last_button != 2){
+                    !current_display_value.equals("") && last_button != 2){
                 current_display_value = ButtonHandle
                         .mAddNumberToValue(current_selection, current_display_value);
-                Log.d(TAG, "current_display_value in decimal before update display = " + current_display_value);
+                Log.d(TAG, "current_display_value in decimal before update display = "
+                        + current_display_value);
                 mUpdateDisplay();
-                Log.d(TAG, "current_display_value in decimal after update display = " + current_display_value);
+                Log.d(TAG, "current_display_value in decimal after update display = "
+                        + current_display_value);
             }
             last_button = 1;
         }catch (Exception e) {
@@ -260,7 +251,7 @@ public class InterfaceUI extends Activity {
             last_button = 2;
 
 
-            current_display_value = null;
+            current_display_value = "";
         }
     };
 
@@ -271,7 +262,7 @@ public class InterfaceUI extends Activity {
             mConductOperatorTasks();
             last_button = 2;
 
-            current_display_value = null;
+            current_display_value = "";
         }
     };
 
@@ -282,7 +273,7 @@ public class InterfaceUI extends Activity {
             mConductOperatorTasks();
             last_button = 2;
 
-            current_display_value = null;
+            current_display_value = "";
         }
     };
 
@@ -293,7 +284,7 @@ public class InterfaceUI extends Activity {
             mConductOperatorTasks();
             last_button = 2;
 
-            current_display_value = null;
+            current_display_value = "";
 
         }
     };
@@ -306,7 +297,9 @@ public class InterfaceUI extends Activity {
 
             current_display_value = CalculatorMathOperations.mEqualsTask(operator_selection,
                     current_display_value, first_number);
-            first_number = Double.parseDouble(a);
+            if (!a.equals("")) {
+                first_number = Double.parseDouble(a);
+            }
             mUpdateDisplay();
             //last_button = 3;
         }
@@ -340,7 +333,7 @@ public class InterfaceUI extends Activity {
     private View.OnClickListener deleteListener = new View.OnClickListener() {
         public void onClick(View v) {
 
-            if (last_button != 2 && !current_display_value.equals(null)) {
+            if (last_button != 2 && !current_display_value.equals("")) {
             current_display_value = CalculatorMathOperations.mNumberDelete(current_display_value);
             mUpdateDisplay();
             }else{
@@ -360,7 +353,6 @@ public class InterfaceUI extends Activity {
 
         if (add_keypad_counter == 1) {
         LinearLayout keypad_layout = (LinearLayout) findViewById(R.id.keypad_layout);
-        //LinearLayout keypad_right = (LinearLayout) findViewById(R.id.keypad_layout_right);
         LayoutInflater inflateKeypad;
         inflateKeypad = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -390,7 +382,6 @@ public class InterfaceUI extends Activity {
             keypad_layout.removeAllViews();
             keypad_layout.addView(keypad_left);
             mButtonSetup();
-
             layout_side = 2;
 
         } else if (layout_side == 2) {
@@ -398,7 +389,6 @@ public class InterfaceUI extends Activity {
             keypad_layout.removeAllViews(/*keypad_left*/);
             keypad_layout.addView(keypad_right);
             mButtonSetup();
-
             layout_side = 1;
 
         }
@@ -528,7 +518,6 @@ public class InterfaceUI extends Activity {
     public void mShowSettings() {
         Log.d(TAG, "wallpaper_checker entering preferences = " + wallpaper_checker);
         Intent Preferences = new Intent(getBaseContext(), com.madwin.mwcalc.PreferencesUI.class);
-      //  Preferences.putExtra("wallpaper_checker", wallpaper_checker);
         this.startActivity(Preferences);
         finish();
     }
@@ -593,10 +582,10 @@ public class InterfaceUI extends Activity {
     public void mConductOperatorTasks() {
 
 
-       if(last_button == 1 && !current_display_value.equals(".") && !current_display_value.equals(null)){
+       if(last_button == 1 && !current_display_value.equals(".") && !current_display_value.equals("")){
 
         first_number = ButtonHandle.mOperatorTasks(current_display_value, first_number, last_button);
-        current_display_value = null;
+        current_display_value = "";
 
        }else{
            last_button = 1;
@@ -636,6 +625,11 @@ public class InterfaceUI extends Activity {
         return ret;
     }
 
+    Boolean mCheckSettingsFile(){
+        File file = new File("/data/data/com.madwin.mwcalc/files/preferences.txt");
+
+        return file.exists();
+    }
 
 
 }

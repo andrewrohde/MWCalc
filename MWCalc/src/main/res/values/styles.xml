@@ -16,5 +16,21 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    <style name="CalculatorStyle" parent="android:Theme">
+        <item name="android:buttonStyle">@style/CalcButtonStyle</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
 
+
+
+    <style name="CalcButtonStyle" >
+        <item name="android:textColor">#33B5E5</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@drawable/default_button_selector</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>

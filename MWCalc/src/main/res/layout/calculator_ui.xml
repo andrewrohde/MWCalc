@@ -18,11 +18,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/previous_value"
             android:gravity="center|right"
-            android:textColor="#42ff25"
+            android:textColor="@color/Holo_Blue"
             android:background="@color/TransDarkGray"
             android:singleLine="false"
             android:text="@string/calculator_text_view"
-            android:textSize="52sp"
+            android:textSize="45sp"
             android:textAlignment="gravity"
             android:lines="1"/>
 
@@ -31,11 +31,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/currently_displayed_value"
             android:gravity="center|right"
-            android:textColor="#42ff25"
+            android:textColor="@color/Holo_Blue"
             android:background="@color/TransDarkGray"
             android:singleLine="false"
             android:text="@string/calculator_text_view"
-            android:textSize="52sp"
+            android:textSize="45sp"
             android:textAlignment="gravity"
             android:lines="1"/>
 

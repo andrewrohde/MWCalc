@@ -5,15 +5,24 @@ package com.madwin.mwcalc;
  * This class file handles all mathematical operations.
  */
 
+import android.util.Log;
+
+import java.io.IOException;
+
 public class CalculatorMathOperations {
+
+
 
 
     public static String mEqualsTask(int operator_selection,
                                        String current_display_value, double first_number){
+        String TAG = "MathOperations";
+        Log.d(TAG, "operator_selection/current_display_value/first_number in equals = " +
+                    operator_selection + "/" + current_display_value + "/" + first_number);
 
         double displayed_value_after_operation = 0;
 
-        if (!current_display_value.equals(null) && !current_display_value.equals("0")
+        if (!current_display_value.equals("") && !current_display_value.equals("0")
                 && !current_display_value.equals(".") && first_number != 0 ){
 
             if (operator_selection == 1){
@@ -39,12 +48,13 @@ public class CalculatorMathOperations {
             }
         }
 
+
         return current_display_value;
     }
 
     public static String mSquareRoot(String current_display_value){
 
-        if (current_display_value.equals(null) || current_display_value.equals("0")
+        if (current_display_value.equals("") || current_display_value.equals("0")
                 || current_display_value.equals(".")){
             return "0";
         } else {
@@ -54,7 +64,7 @@ public class CalculatorMathOperations {
 
     public static String mNumberSquared(String current_display_value){
 
-        if (current_display_value.equals(null) || current_display_value.equals("0")
+        if (current_display_value.equals("") || current_display_value.equals("0")
                 || current_display_value.equals(".")) {
             return "0";
         } else{
@@ -72,7 +82,7 @@ public class CalculatorMathOperations {
                 );
         }
 
-        if (current_display_value.equals(null)) {
+        if (current_display_value.equals("")) {
             return "0";
         }
 

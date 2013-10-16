@@ -23,11 +23,9 @@
             android:gravity="bottom|left">
 
             <Button
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
+                style="@style/CalcButtonStyle"
                 android:id="@+id/delete"
-                android:background="@drawable/delete_button_selector"
-                android:scaleType="centerInside"/>
+                android:text="@string/delete_text"/>
 
         </LinearLayout>
 
@@ -39,35 +37,25 @@
             android:gravity="bottom|left">
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/clear"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/clear_button_selector"/>
+                android:text="@string/clear_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/sqrt"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/sqrt_button_selector"/>
+                android:text="@string/square_root_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/squared"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_squared_button_selector"/>
+                android:text="@string/squared_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/division"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/division_button_selector"/>
+                android:text="@string/division_text"/>
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -77,34 +65,24 @@
             android:gravity="bottom|left">
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/seven"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_seven_button_selector"/>
+                android:text="@string/seven_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/eight"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_eight_button_selector"/>
+                android:text="@string/eight_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/nine"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_nine_button_selector"/>
+                android:text="@string/nine_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/multiplication"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/mult_button_selector"/>
+                android:text="@string/multiplication_text"/>
 
         </LinearLayout>
 
@@ -115,41 +93,25 @@
             android:id="@+id/linearLayout_4"
             android:gravity="bottom|left">
 
-
-
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/four"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_four_button_selector"/>
+                android:text="@string/four_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/five"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_five_button_selector"/>
+                android:text="@string/five_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/six"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_six_button_selector"/>
+                android:text="@string/six_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/subtraction"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/subtraction_button_selector"/>
-
-
-
-
+                android:text="@string/subtraction_text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -160,35 +122,24 @@
             android:gravity="bottom|left">
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/one"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:background="@drawable/number_one_button_selector"
-                android:scaleType="centerInside"
-                android:clickable="true"/>
+                android:text="@string/one_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/two"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_two_button_selector"/>
+                android:text="@string/two_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/three"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_three_button_selector"/>
+                android:text="@string/three_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/addition"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/addition_button_selector"/>
+                android:text="@string/addition"/>
         </LinearLayout>
 
         <LinearLayout
@@ -199,32 +150,20 @@
             android:gravity="bottom|left">
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/zero"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/number_zero_button_selector"
-                android:clickable="true"/>
+                android:text="@string/zero_text"/>
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/decimal"
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
-                android:scaleType="centerInside"
-                android:background="@drawable/decimal_button_selector"/>
+                android:text="@string/decimal_text"/>
 
             <Button
-                android:layout_width="@dimen/button_width"
-                android:layout_height="@dimen/button_height"
+                style="@style/CalcButtonStyle"
                 android:id="@+id/equals"
-                android:clickable="true"
-                android:scaleType="centerInside"
-                android:background="@drawable/equals_button_selector"/>
-
-
-
+                android:text="@string/equals_text"/>
         </LinearLayout>
-
 
     </LinearLayout>
 
@@ -240,7 +179,6 @@
             android:id="@+id/linearLayout_ui_switch"
             android:layout_gravity="center|right">
 
-
             <Button
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
@@ -249,12 +187,6 @@
                 android:scaleType="centerInside"
                 android:background="@drawable/right_ui_selector"
                 android:gravity="center|right"/>
-
         </LinearLayout>
-
-
-
         </LinearLayout>
-
-
 </LinearLayout>
