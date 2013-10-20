@@ -58,5 +58,6 @@
     <string name="subtraction_text">-</string>
     <string name="square_root_text">√</string>
     <string name="decimal_text">.</string>
+    <string name="left_right_hand">Left Handed / Right Handed</string>
 
 </resources>

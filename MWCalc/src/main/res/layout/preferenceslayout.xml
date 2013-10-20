@@ -14,4 +14,22 @@
             android:layout_gravity="center"
             android:singleLine="false"
             android:textStyle="normal"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/left_right_hand"
+        android:id="@+id/handCheckBox"
+        android:layout_gravity="center"
+        android:singleLine="false"
+        android:textStyle="normal"/>
+
+
+
+
 </LinearLayout>
