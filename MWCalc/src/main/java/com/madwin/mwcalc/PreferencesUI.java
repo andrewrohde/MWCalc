@@ -37,91 +37,86 @@ public class PreferencesUI extends Activity {
     File file;
     //String preferences_location = "/data/data/com.madwin.MWCalc/preferences/";
     String preferences_filename = "preferences.txt";
+    String layout_preference_filename = "layout.txt";
     String background_save_string = "";
     String background_preference = "background_enabled=";
     Boolean wallpaper_checker = false;
-
-
-
+    String layout_side;
+    Boolean hand_checker = false;
+    String wallpaper_value = "";
+    String layout_preference = "layout_side=";
+    String layout_save_string = "";
 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preferenceslayout);
-
-        //mCreatePreferencesFile();
-
-        preferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-        if (mCheckSettingsFile()){
-        background_save_string = getPreference(
-                background_preference, preferences_filename);
-        }
-
-        //Log.d(TAG, "background_save_string.charAt(background_save_string.length() - 1) = "
-        //        + background_save_string.charAt(background_save_string.length() - 1));
-        if (mCheckSettingsFile()) {
-        wallpaper_checker = !Character.toString((background_save_string.charAt(
-                background_save_string.length() - 1))).equals("0");
-        }
-        Log.d(TAG, "background_save_string = " + background_save_string);
-
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        /*Bundle extras = getIntent().getExtras();
-        wallpaper_checker = extras.getBoolean("wallpaper_checker");
+        if (SavePreferences.mCheckSettingsFile(preferences_filename)){
+            background_save_string = SavePreferences.getPreference(background_preference, preferences_filename);
+            Log.d(TAG, "background_save_string = " + background_save_string);
 
-        //pass and receive left right ui variable
+            wallpaper_checker = !Character.toString((background_save_string.charAt(
+                    background_save_string.length() - 1))).equals("0");
 
-        if (getIntent().getExtras() == null){
-            pass_wall_check = wallpaper_checker = false;
-        } else {
-            pass_wall_check = wallpaper_checker;
-        }*/
+
+        }
+        if (SavePreferences.mCheckSettingsFile(layout_preference_filename)){
+            layout_save_string = SavePreferences.getPreference(layout_preference, layout_preference_filename);
+            Log.d(TAG, "layout_save_string = " + layout_save_string);
+            hand_checker = Character.toString((layout_save_string.charAt(
+                    layout_save_string.length() - 1))).equals("0");
+
+        }
+
+        Log.d(TAG, "hand_checker = " + hand_checker);
+        Log.d(TAG, "wallpaper_checker = " + wallpaper_checker);
+
         CheckBox wall_checkBox = (CheckBox) findViewById(R.id.wallCheckBox);
+        CheckBox hand_checkBox = (CheckBox) findViewById(R.id.handCheckBox);
         wall_checkBox.setChecked(wallpaper_checker);
-
-      /*  if (wall_checkBox.isChecked()){
-            pass_wall_check = true;
-        }*/
+        hand_checkBox.setChecked(hand_checker);
 
         wall_checkBox.setOnClickListener(wallCheckBoxListener);
-
-
-
-        // Add setting for left - right hand calculator layout
-
-
-
-    }
-
-    void mReadPreferences() {
-
+        hand_checkBox.setOnClickListener(handCheckBoxListener);
 
     }
 
     private View.OnClickListener wallCheckBoxListener = new View.OnClickListener() {
         public void onClick(View v) {
             CheckBox wall_checkBox = (CheckBox) findViewById(R.id.wallCheckBox);
-
+            wallpaper_checker = !wallpaper_checker;
             if (wall_checkBox.isChecked()) {
-                wallpaper_checker = true;
+                wallpaper_value = "1";
             } else{
-                wallpaper_checker = false;
+                wallpaper_value = "0";
             }
             Log.d(TAG, "wallpaper_checker when button pressed = " + wallpaper_checker);
+            SavePreferences.mSaveToFile(background_preference, wallpaper_value, preferences_filename);
         }
 
     };
 
+    private View.OnClickListener handCheckBoxListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            CheckBox hand_checkBox = (CheckBox) findViewById(R.id.handCheckBox);
+            hand_checker = !hand_checker;
+            if (hand_checkBox.isChecked()) {
+                layout_side = "1";
+            } else{
+                layout_side = "0";
+            }
+            Log.d(TAG, "hand_checker after button pressed = " + hand_checker);
+            SavePreferences.mSaveToFile(layout_preference, layout_side, layout_preference_filename);
 
+        }
+
+    };
 
     public boolean onOptionsItemSelected(MenuItem item){
         Intent back_to_calc = new Intent(this, InterfaceUI.class);
-    //    back_to_calc.putExtra("wallpaper_checker", wallpaper_checker);
-
-        mSaveToFile();
         this.startActivity(back_to_calc);
         finish();
         return true;
@@ -131,104 +126,9 @@ public class PreferencesUI extends Activity {
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Intent back_to_calc = new Intent(this, InterfaceUI.class);
-         //   back_to_calc.putExtra("wallpaper_checker", pass_wall_check);
-
-            mSaveToFile();
             this.startActivity(back_to_calc);
             finish();
         }
         return super.onKeyUp(keyCode, event);
     }
-
-    public void mSaveToFile() {
-
-       // mCreatePreferencesFile();
-
-        int background_save_value;
-
-        if (wallpaper_checker == true) {
-            background_save_value = 1;
-        } else {
-            background_save_value = 0;
-        }
-
-
-        background_save_string = background_preference + background_save_value;
-
-
-        try{
-
-            FileOutputStream fos = openFileOutput(preferences_filename, Context.MODE_PRIVATE);
-            fos.write(background_save_string.getBytes());
-            fos.close();
-/*
-            OutputStream fileOutputStream = new BufferedOutputStream(new FileOutputStream(file, true));
-            fileOutputStream.write(background_save_string.getBytes());
-            //fileOutputStream.write(System.getProperty("line.separator").getBytes());
-            fileOutputStream.close();
-*/
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-
-    }
-
-    String getPreference(String get_preference, String preferences_filename) {
-        String TAG = "MWCalc";
-
-        String ret = "";
-
-        try {
-            InputStream inputStream = openFileInput(preferences_filename);
-
-            if ( inputStream != null ) {
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-                String receiveString = get_preference;
-                StringBuilder stringBuilder = new StringBuilder();
-
-                while ( (receiveString = bufferedReader.readLine()) != null ) {
-                    stringBuilder.append(receiveString);
-                }
-
-                inputStream.close();
-                ret = stringBuilder.toString();
-            }
-        }
-        catch (FileNotFoundException e) {
-            Log.e("login activity", "File not found: " + e.toString());
-        } catch (IOException e) {
-            Log.e("login activity", "Can not read file: " + e.toString());
-        }
-
-        Log.d(TAG, "read_preference = " + ret);
-
-        return ret;
-    }
-
-    Boolean mCheckSettingsFile(){
-        File file = new File("/data/data/com.madwin.mwcalc/files/preferences.txt");
-
-        return file.exists();
-    }
-
-
-
-
-   /* public void mCreatePreferencesFile() {
-
-        file = new File(preferences_location, preferences_filename);
-
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-            Log.e("ERRR", "Could not create file",e);
-        }
-
-    }
-*/
-
 }

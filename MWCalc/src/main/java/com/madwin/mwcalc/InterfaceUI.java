@@ -15,15 +15,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.prefs.Preferences;
-
-
 public class InterfaceUI extends Activity {
 
 
@@ -36,8 +27,11 @@ public class InterfaceUI extends Activity {
     private int button_width;
     private int layout_side;
     ViewGroup.LayoutParams params;
-    private int add_keypad_counter;
     private int last_button; // 1 for number, 2 for operator, 3 for equals
+    String wallpaper_preference = "background_enabled=";
+    String layout_side_preference = "layout_side=";
+    String preferences_filename = "preferences.txt";
+    String layout_preference_filename = "layout.txt";
 
 
     @Override
@@ -45,16 +39,34 @@ public class InterfaceUI extends Activity {
 	{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator_ui);
-        add_keypad_counter = 1;
-        layout_side = 1;
-        mAddKeypadLayout();
 
-        if(mCheckSettingsFile()){
-
-
-        wallpaper_checker = !Character.toString((getPreference("background_enabled=", "preferences.txt").charAt(
-                getPreference("background_enabled=", "preferences.txt").length() - 1))).equals("0");
+        if(SavePreferences.mCheckSettingsFile(preferences_filename)){
+        wallpaper_checker = !Character.toString((SavePreferences.getPreference(
+                wallpaper_preference, preferences_filename).charAt(
+                SavePreferences.getPreference(wallpaper_preference, preferences_filename).length() - 1))).equals("0");
+            Log.d(TAG, "wallpaper_preference = " + SavePreferences.getPreference(
+                    wallpaper_preference, preferences_filename));
         }
+        if (SavePreferences.mCheckSettingsFile(layout_preference_filename)) {
+        layout_side = Character.getNumericValue(SavePreferences.getPreference(layout_side_preference, layout_preference_filename).charAt(
+                SavePreferences.getPreference(layout_side_preference, layout_preference_filename).length() - 1));
+            Log.d(TAG, "layout_side_preference = " + SavePreferences.getPreference(
+                    layout_side_preference, layout_preference_filename));
+        }else{
+            layout_side = 0;
+        }
+
+        if (SavePreferences.mCheckSettingsFile(layout_preference_filename)){
+            String layout_save_string = SavePreferences.getPreference(layout_side_preference, layout_preference_filename);
+            Log.d(TAG, "layout_save_string = " + layout_save_string);
+            layout_side = Character.getNumericValue((layout_save_string.charAt(
+                    layout_save_string.length() - 1)));
+
+        }
+        Log.d(TAG, "wallpaper_checker = " + wallpaper_checker);
+        Log.d(TAG, "layout_side = " + layout_side);
+
+        mAddKeypadLayout();
 
         mUpdateDisplay();
 
@@ -112,8 +124,6 @@ public class InterfaceUI extends Activity {
 
             String current_selection = "2";
             last_button = 1;
-
-
             current_display_value = ButtonHandle
                     .mAddNumberToValue(current_selection, current_display_value);
             mUpdateDisplay();
@@ -214,11 +224,11 @@ public class InterfaceUI extends Activity {
                     !current_display_value.equals("") && last_button != 2){
                 current_display_value = ButtonHandle
                         .mAddNumberToValue(current_selection, current_display_value);
-                Log.d(TAG, "current_display_value in decimal before update display = "
-                        + current_display_value);
+     //           Log.d(TAG, "current_display_value in decimal before update display = "
+      //                  + current_display_value);
                 mUpdateDisplay();
-                Log.d(TAG, "current_display_value in decimal after update display = "
-                        + current_display_value);
+     //           Log.d(TAG, "current_display_value in decimal after update display = "
+     //                   + current_display_value);
             }
             last_button = 1;
         }catch (Exception e) {
@@ -244,13 +254,9 @@ public class InterfaceUI extends Activity {
     private View.OnClickListener additionListener = new View.OnClickListener() {
         public void onClick(View v)  {
 
-
-
             operator_selection = 1;
             mConductOperatorTasks();
             last_button = 2;
-
-
             current_display_value = "";
         }
     };
@@ -261,7 +267,6 @@ public class InterfaceUI extends Activity {
             operator_selection = 2;
             mConductOperatorTasks();
             last_button = 2;
-
             current_display_value = "";
         }
     };
@@ -272,7 +277,6 @@ public class InterfaceUI extends Activity {
             operator_selection = 3;
             mConductOperatorTasks();
             last_button = 2;
-
             current_display_value = "";
         }
     };
@@ -283,9 +287,7 @@ public class InterfaceUI extends Activity {
             operator_selection = 4;
             mConductOperatorTasks();
             last_button = 2;
-
             current_display_value = "";
-
         }
     };
 
@@ -293,15 +295,12 @@ public class InterfaceUI extends Activity {
         public void onClick(View v)  {
 
             String a = current_display_value;
-
-
             current_display_value = CalculatorMathOperations.mEqualsTask(operator_selection,
                     current_display_value, first_number);
             if (!a.equals("")) {
                 first_number = Double.parseDouble(a);
             }
             mUpdateDisplay();
-            //last_button = 3;
         }
     };
 
@@ -309,8 +308,6 @@ public class InterfaceUI extends Activity {
         public void onClick(View v)  {
 
             first_number = 0;
-            //last_button = 1;
-
             current_display_value = "0";
             mUpdateDisplay();
         }
@@ -337,7 +334,6 @@ public class InterfaceUI extends Activity {
             current_display_value = CalculatorMathOperations.mNumberDelete(current_display_value);
             mUpdateDisplay();
             }else{
-                //last_button = 1;
             }
         }
     };
@@ -351,7 +347,7 @@ public class InterfaceUI extends Activity {
 
     public void mAddKeypadLayout() {
 
-        if (add_keypad_counter == 1) {
+        if (layout_side == 0) {
         LinearLayout keypad_layout = (LinearLayout) findViewById(R.id.keypad_layout);
         LayoutInflater inflateKeypad;
         inflateKeypad = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -359,8 +355,15 @@ public class InterfaceUI extends Activity {
         LinearLayout keypad_right = (LinearLayout) inflateKeypad
                 .inflate(R.layout.keypad_right, null);
         keypad_layout.addView(keypad_right);
-            add_keypad_counter = 2;
+           // add_keypad_counter = 1;
 
+        }else {
+            LinearLayout keypad_layout = (LinearLayout) findViewById(R.id.keypad_layout);
+            LayoutInflater inflateKeypad;
+            inflateKeypad = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            LinearLayout keypad_left = (LinearLayout) inflateKeypad
+                    .inflate(R.layout.keypad_left, null);
+            keypad_layout.addView(keypad_left);
         }
 
     }
@@ -377,21 +380,22 @@ public class InterfaceUI extends Activity {
                 .inflate(R.layout.keypad_right, null);
 
 
-        if (layout_side == 1) {
+        if (layout_side == 0) {
 
             keypad_layout.removeAllViews();
             keypad_layout.addView(keypad_left);
             mButtonSetup();
-            layout_side = 2;
+            layout_side = 1;
 
-        } else if (layout_side == 2) {
+        } else if (layout_side == 1) {
 
             keypad_layout.removeAllViews(/*keypad_left*/);
             keypad_layout.addView(keypad_right);
             mButtonSetup();
-            layout_side = 1;
+            layout_side = 0;
 
         }
+        mSaveSettings();
     }
 
     public void mUpdateDisplay(){
@@ -399,9 +403,6 @@ public class InterfaceUI extends Activity {
         LinearLayout calculator_layout = (LinearLayout)findViewById(R.id.calculator_layout);
         TextView display = (TextView)findViewById(R.id.currently_displayed_value);
         TextView previous_value = (TextView)findViewById(R.id.previous_value);
-
-
-
         LinearLayout button_layout = (LinearLayout)findViewById(R.id.keypad_layout);
 
         int button_layout_height = button_layout.getContext().getResources()
@@ -410,8 +411,6 @@ public class InterfaceUI extends Activity {
                 .getDisplayMetrics().widthPixels;
 
         Log.d(TAG, "layout_height/width = " + button_layout_height + "  " + button_layout_width);
-
-
         button_height = ((int)(button_layout_height * 0.66))/6;
         button_width = button_layout_width/4;
 
@@ -433,6 +432,7 @@ public class InterfaceUI extends Activity {
         } else {
             calculator_layout.setBackgroundColor(getResources().getColor(R.color.Black));
         }
+        mSaveSettings();
     }
 
     private void mSetButtonSize() {
@@ -459,7 +459,6 @@ public class InterfaceUI extends Activity {
         Button button_squared = (Button)findViewById(R.id.squared);
         Button button_ui_switch = (Button)findViewById(R.id.ui_switch);
 
-        Log.d(TAG, "button_height/width = " + button_height + "  " + button_width);
         int button_dimension;
         if (button_height < button_width){
         button_dimension = button_height;
@@ -470,9 +469,6 @@ public class InterfaceUI extends Activity {
         params = buttonOne.getLayoutParams();
         params.height = button_dimension;
         params.width = button_dimension;
-
-        Log.d(TAG, "button_dimension = " + button_dimension);
-        Log.d(TAG, "layout_params = " + params);
 
         buttonOne.setLayoutParams(params);
         buttonTwo.setLayoutParams(params);
@@ -516,6 +512,7 @@ public class InterfaceUI extends Activity {
     }
 
     public void mShowSettings() {
+        mSaveSettings();
         Log.d(TAG, "wallpaper_checker entering preferences = " + wallpaper_checker);
         Intent Preferences = new Intent(getBaseContext(), com.madwin.mwcalc.PreferencesUI.class);
         this.startActivity(Preferences);
@@ -581,7 +578,6 @@ public class InterfaceUI extends Activity {
 
     public void mConductOperatorTasks() {
 
-
        if(last_button == 1 && !current_display_value.equals(".") && !current_display_value.equals("")){
 
         first_number = ButtonHandle.mOperatorTasks(current_display_value, first_number, last_button);
@@ -592,44 +588,19 @@ public class InterfaceUI extends Activity {
        }
     }
 
-    String getPreference(String get_preference, String preferences_filename) {
-        String TAG = "MWCalc";
+public void mSaveSettings() {
 
-        String ret = "";
-
-        try {
-            InputStream inputStream = openFileInput(preferences_filename);
-
-            if ( inputStream != null ) {
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-                String receiveString = get_preference;
-                StringBuilder stringBuilder = new StringBuilder();
-
-                while ( (receiveString = bufferedReader.readLine()) != null ) {
-                    stringBuilder.append(receiveString);
-                }
-
-                inputStream.close();
-                ret = stringBuilder.toString();
-            }
-        }
-        catch (FileNotFoundException e) {
-            Log.e("login activity", "File not found: " + e.toString());
-        } catch (IOException e) {
-            Log.e("login activity", "Can not read file: " + e.toString());
-        }
-
-        Log.d(TAG, "read_preference = " + ret);
-
-        return ret;
+    String wallpaper_save_value;
+    String layout_side_value;
+    if (wallpaper_checker){
+        wallpaper_save_value = "1";
+    }else{
+        wallpaper_save_value = "0";
     }
 
-    Boolean mCheckSettingsFile(){
-        File file = new File("/data/data/com.madwin.mwcalc/files/preferences.txt");
+    layout_side_value = Integer.toString(layout_side);
+    SavePreferences.mSaveToFile(wallpaper_preference, wallpaper_save_value, preferences_filename);
+    SavePreferences.mSaveToFile(layout_side_preference, layout_side_value, layout_preference_filename);
 
-        return file.exists();
-    }
-
-
+}
 }

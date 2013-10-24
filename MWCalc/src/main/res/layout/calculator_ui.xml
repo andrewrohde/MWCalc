@@ -40,14 +40,6 @@
             android:lines="1"/>
 
 
-
-        <!-- ***currently_displayed_value text view properties***
-                    android:shadowColor="@color/White"
-            android:shadowDx="4"
-            android:shadowDy="4"
-            android:shadowRadius="0.1"
-        -->
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/keypad_layout"
