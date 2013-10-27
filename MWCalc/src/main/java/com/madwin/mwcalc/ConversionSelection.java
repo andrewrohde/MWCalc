@@ -1,11 +1,6 @@
 package com.madwin.mwcalc;
 
-/**
- * Created by Andrew on 9/2/13.
- */
 public class ConversionSelection {
-
-
 
     public static void mDecision(String selection) {
 
@@ -49,6 +44,46 @@ public class ConversionSelection {
             double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
             com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
                     com.madwin.mwcalc.UnitConversion.mKphToMph(starting_value)));
+        }
+        if (selection.equals("tsp to Tbsp")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mTspToTbsp(starting_value)));
+        }
+        if (selection.equals("Tbsp to tsp")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mTbspToTsp(starting_value)));
+        }
+        if (selection.equals("Cups to Tbsp")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mCupsToTbsp(starting_value)));
+        }
+        if (selection.equals("Tbsp to Cups")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mTbspToCups(starting_value)));
+        }
+        if (selection.equals("in to ft")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mInToFt(starting_value)));
+        }
+        if (selection.equals("ft to in")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mFtToIn(starting_value)));
+        }
+        if (selection.equals("L to gal")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mLToGal(starting_value)));
+        }
+        if (selection.equals("gal to L")) {
+            double starting_value = com.madwin.mwcalc.UnitConverter.mStartingValue();
+            com.madwin.mwcalc.UnitConverter.mUpdateDisplay(Double.toString(
+                    com.madwin.mwcalc.UnitConversion.mGalToL(starting_value)));
         }
 
     }

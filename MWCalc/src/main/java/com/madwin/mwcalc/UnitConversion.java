@@ -41,6 +41,38 @@ public class UnitConversion extends com.madwin.mwcalc.UnitConverter {
         double final_number = starting_value * 0.621371;
         return final_number;
     }
+    public static double mTspToTbsp (double starting_value) {
+        double final_number = starting_value * 0.33333;
+        return final_number;
+    }
+    public static double mTbspToTsp (double starting_value) {
+        double final_number = starting_value * 3;
+        return final_number;
+    }
+    public static double mCupsToTbsp (double starting_value) {
+        double final_number = starting_value * 16;
+        return final_number;
+    }
+     public static double mTbspToCups (double starting_value) {
+        double final_number = starting_value * 0.0625;
+        return final_number;
+    }
+    public static double mInToFt (double starting_value) {
+        double final_number = starting_value * 0.0833333;
+        return final_number;
+    }
+    public static double mFtToIn (double starting_value) {
+        double final_number = starting_value * 12;
+        return final_number;
+    }
+    public static double mGalToL (double starting_value) {
+        double final_number = starting_value * 3.78541;
+        return final_number;
+    }
+    public static double mLToGal (double starting_value) {
+        double final_number = starting_value * 0.264172;
+        return final_number;
+    }
 
 
 }

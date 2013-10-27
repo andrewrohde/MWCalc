@@ -69,6 +69,8 @@ public class UnitConverter extends Activity implements OnChildClickListener {
         groupItem.add(getString(R.string.length));
         groupItem.add(getString(R.string.weight));
         groupItem.add(getString(R.string.speed));
+        groupItem.add(getString(R.string.cooking));
+        groupItem.add(getString(R.string.volume));
     }
 
     ArrayList<String> groupItem = new ArrayList<String>();
@@ -83,6 +85,8 @@ public class UnitConverter extends Activity implements OnChildClickListener {
         child.add(getString(R.string.mitokm));
         child.add(getString(R.string.fttom));
         child.add(getString(R.string.mtoft));
+        child.add(getString(R.string.intoft));
+        child.add(getString(R.string.fttoin));
         childItem.add(child);
 
         /**
@@ -98,6 +102,24 @@ public class UnitConverter extends Activity implements OnChildClickListener {
         child = new ArrayList<String>();
         child.add(getString(R.string.mphtokph));
         child.add(getString(R.string.kphtomph));
+        childItem.add(child);
+
+        /**
+         * Add Data For Cooking
+         */
+        child = new ArrayList<String>();
+        child.add(getString(R.string.tsptotbsp));
+        child.add(getString(R.string.tbsptotsp));
+        child.add(getString(R.string.tbsptocups));
+        child.add(getString(R.string.cupstotbsp));
+        childItem.add(child);
+
+        /**
+         * Add Data For Volume
+         */
+        child = new ArrayList<String>();
+        child.add(getString(R.string.galtol));
+        child.add(getString(R.string.ltogal));
         childItem.add(child);
 
     }

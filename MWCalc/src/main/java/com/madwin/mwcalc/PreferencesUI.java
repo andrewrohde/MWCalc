@@ -104,9 +104,9 @@ public class PreferencesUI extends Activity {
             CheckBox hand_checkBox = (CheckBox) findViewById(R.id.handCheckBox);
             hand_checker = !hand_checker;
             if (hand_checkBox.isChecked()) {
-                layout_side = "1";
-            } else{
                 layout_side = "0";
+            } else{
+                layout_side = "1";
             }
             Log.d(TAG, "hand_checker after button pressed = " + hand_checker);
             SavePreferences.mSaveToFile(layout_preference, layout_side, layout_preference_filename);

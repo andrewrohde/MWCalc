@@ -70,9 +70,9 @@ public class SavePreferences {
             }
         }
         catch (FileNotFoundException e) {
-            Log.e("login activity", "File not found: " + e.toString());
+            Log.e("save preferences activity", "File not found: " + e.toString());
         } catch (IOException e) {
-            Log.e("login activity", "Can not read file: " + e.toString());
+            Log.e("save preferences activity", "Can not read file: " + e.toString());
         }
         return ret;
     }
