@@ -25,12 +25,12 @@ public class SavePreferences {
         File file;
         try{
             file = new File ("/data/data/com.madwin.mwcalc/files/" + preference_file_name);
-            fos = new FileOutputStream(file);
 
             if (!file.exists()) {
-                    file.createNewFile();
+                file.getParentFile().mkdirs();
+                file.createNewFile();
             }
-
+            fos = new FileOutputStream(file);
             fos.write(preference_save_string.getBytes());
             fos.close();
 
