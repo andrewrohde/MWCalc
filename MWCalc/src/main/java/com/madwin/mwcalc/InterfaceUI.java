@@ -300,11 +300,7 @@ public class InterfaceUI extends Activity {
                     !current_display_value.equals("") && last_button != 2){
                 current_display_value = ButtonHandle
                         .mAddNumberToValue(current_selection, current_display_value);
-     //           Log.d(TAG, "current_display_value in decimal before update display = "
-      //                  + current_display_value);
                 mUpdateDisplay();
-     //           Log.d(TAG, "current_display_value in decimal after update display = "
-     //                   + current_display_value);
             }
             last_button = 1;
         }catch (Exception e) {
@@ -433,7 +429,6 @@ public class InterfaceUI extends Activity {
         LinearLayout keypad_right = (LinearLayout) inflateKeypad
                 .inflate(R.layout.keypad_right, null);
         keypad_layout.addView(keypad_right);
-           // add_keypad_counter = 1;
 
         }else {
             LinearLayout keypad_layout = (LinearLayout) findViewById(R.id.keypad_layout);
@@ -706,7 +701,6 @@ public void mSaveSettings() {
         }
     }
 
-    /** Swaps fragments in the main content view */
     private void selectItem(int position) {
 
         Log.d("selectItem position variable = ", String.valueOf(position));
@@ -720,24 +714,9 @@ public void mSaveSettings() {
             case 2:
                 mShowHelp();
                 return ;
-            //default:
-             //   return super.onOptionsItemSelected();
         }
 
 
-        // Create a new fragment and specify the planet to show based on position
-        //Fragment fragment = new PlanetFragment();
-        //Bundle args = new Bundle();
-        //args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-        //fragment.setArguments(args);
-
-        // Insert the fragment by replacing any existing fragment
-        //FragmentManager fragmentManager = getFragmentManager();
-        //fragmentManager.beginTransaction()
-          //      .replace(R.id.content_frame, fragment)
-           //     .commit();
-
-        // Highlight the selected item, update the title, and close the drawer
         mDrawerList.setItemChecked(position, true);
         setTitle(mPlanetTitles[position]);
         mDrawerLayout.closeDrawer(mDrawerList);
@@ -749,26 +728,4 @@ public void mSaveSettings() {
         getActionBar().setTitle(mTitle);
     }
 
- /*   public static class PlanetFragment extends Fragment {
-        public static final String ARG_PLANET_NUMBER = "planet_number";
-
-        public PlanetFragment() {
-            // Empty constructor required for fragment subclasses
-
-        }
-
-    /*    @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_planet, container, false);
-            int i = getArguments().getInt(ARG_PLANET_NUMBER);
-            String planet = getResources().getStringArray(R.array.planets_array)[i];
-
-            int imageId = getResources().getIdentifier(planet.toLowerCase(Locale.getDefault()),
-                    "drawable", getActivity().getPackageName());
-            ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
-            getActivity().setTitle(planet);
-            return rootView;
-        }
-    }*/
 }

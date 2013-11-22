@@ -35,7 +35,7 @@ public class FormatCalcValue {
 
     public static String mShortenForTextView (String current_display_value) {
 
-        if (current_display_value.length() > 13 ){
+        if (current_display_value.length() > 13 && current_display_value.indexOf("E") != -1){
             return current_display_value.substring(0,9) +
                     current_display_value.substring(current_display_value.indexOf("E"),
                             current_display_value.length());
