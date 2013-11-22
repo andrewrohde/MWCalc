@@ -369,12 +369,14 @@ public class InterfaceUI extends Activity {
     private View.OnClickListener equalsListener = new View.OnClickListener() {
         public void onClick(View v)  {
 
+            if (!current_display_value.equals("") && !current_display_value.equals(".") ) {
             String a = current_display_value;
             current_display_value = CalculatorMathOperations.mEqualsTask(operator_selection,
                     current_display_value, first_number);
-            if (!a.equals("")) {
+
                 first_number = Double.parseDouble(a);
             }
+
             mUpdateDisplay();
         }
     };
