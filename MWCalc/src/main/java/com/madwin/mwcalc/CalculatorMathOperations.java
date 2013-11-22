@@ -11,14 +11,11 @@ import java.io.IOException;
 
 public class CalculatorMathOperations {
 
-
-
-
     public static String mEqualsTask(int operator_selection,
                                        String current_display_value, double first_number){
         String TAG = "MathOperations";
         Log.d(TAG, "operator_selection/current_display_value/first_number in equals = " +
-                    operator_selection + "/" + current_display_value + "/" + first_number);
+                    operator_selection + " / " + current_display_value + " / " + first_number);
 
         double displayed_value_after_operation = 0;
 
@@ -47,7 +44,6 @@ public class CalculatorMathOperations {
                 current_display_value = String.valueOf(displayed_value_after_operation);
             }
         }
-
 
         return current_display_value;
     }

@@ -11,6 +11,8 @@ public class ButtonHandle {
 
     public static String mAddNumberToValue(String current_selection, String current_display_value){
 
+       // String current_selection_string = Double.toString(current_selection);
+
         if (current_display_value == null || current_display_value.equals("0")){
             current_display_value = current_selection;
         }else{
