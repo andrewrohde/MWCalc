@@ -14,7 +14,8 @@
 
      <application
         android:icon="@drawable/mwcalc_icon"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:debuggable="false">
             <activity
             android:label="@string/app_name"
             android:name="com.madwin.mwcalc.InterfaceUI"
@@ -34,6 +35,7 @@
                  android:windowSoftInputMode="stateAlwaysHidden"/>
          <activity android:name="com.madwin.mwcalc.UnitConverter"
                 android:label="Unit Converter"/>
+
 
      </application>
 
