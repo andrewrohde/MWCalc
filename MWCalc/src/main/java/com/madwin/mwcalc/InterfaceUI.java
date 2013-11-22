@@ -26,6 +26,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+import java.text.DecimalFormat;
 import java.util.Locale;
 
 
@@ -493,15 +494,18 @@ public class InterfaceUI extends Activity {
 
         mSetButtonSize();
 
-        display.setText(FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
-                        current_display_value)));
+
+            display.setText(FormatCalcValue.mShortenForTextView(FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
+                    current_display_value))));
 
         if (first_number == 0){
             previous_value.setText("");
 
         } else {
             previous_value.setText(
-                    FormatCalcValue.mRemoveTrailingPointZero(Double.toString(first_number)));
+                    FormatCalcValue.mShortenForTextView(
+                            FormatCalcValue.mRemoveTrailingPointZero(
+                                    Double.toString(first_number))));
         }
         if(wallpaper_checker == true){
             calculator_layout.setBackground(getResources()

@@ -11,11 +11,14 @@ public class ButtonHandle {
 
     public static String mAddNumberToValue(String current_selection, String current_display_value){
 
-       // String current_selection_string = Double.toString(current_selection);
+       // String current_display_value_string = Double.toString(current_selection);
 
-        if (current_display_value == null || current_display_value.equals("0")){
+        if (current_display_value.equals("0") && current_selection.equals(".")){
+            current_display_value = "0.";
+        }else if (current_display_value == "" || current_display_value.equals("0")){
             current_display_value = current_selection;
         }else{
+            //current_display_value = Double.parseDouble(current_display_value_string);current_display_value + current_selection;
             current_display_value = current_display_value + current_selection;
         }
 

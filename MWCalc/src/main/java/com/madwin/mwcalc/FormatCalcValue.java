@@ -19,11 +19,8 @@ public class FormatCalcValue {
             String trailing_point_zero = current_display_value.substring(decimal_position -1, zero_position);
             if (trailing_point_zero.equals(".0")) {
                 current_display_value = current_display_value.substring(0, decimal_position - 1);
-
             }
         }
-
-
         return current_display_value;
 
     }
@@ -35,4 +32,15 @@ public class FormatCalcValue {
         }
         return current_display_value;
     }
+
+    public static String mShortenForTextView (String current_display_value) {
+
+        if (current_display_value.length() > 13 ){
+            return current_display_value.substring(0,9) +
+                    current_display_value.substring(current_display_value.indexOf("E"),
+                            current_display_value.length());
+        }
+        return current_display_value;
+    }
+
 }
