@@ -429,20 +429,19 @@ public class InterfaceUI extends Activity {
                 .inflate(R.layout.keypad_right, null);
 
 
-        if (layout_side == false) {
+        if (!layout_side) {
 
             keypad_layout.removeAllViews();
             keypad_layout.addView(keypad_left);
             mButtonSetup();
             layout_side = true;
 
-        } else if (layout_side == true) {
+        } else if (layout_side) {
 
             keypad_layout.removeAllViews(/*keypad_left*/);
             keypad_layout.addView(keypad_right);
             mButtonSetup();
-            layout_side = false
-            ;
+            layout_side = false;
 
         }
         mSaveSettings();
