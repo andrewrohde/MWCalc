@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
@@ -20,7 +21,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -40,14 +40,14 @@ public class InterfaceUI extends Activity {
     private Boolean wallpaper_checker = false;
     private int button_height;
     private int button_width;
-    private int layout_side;
+    private Boolean layout_side;
     ViewGroup.LayoutParams params;
     private int last_button; // 1 for number, 2 for operator, 3 for equals
-    String wallpaper_preference = "background_enabled=";
+  /*  String wallpaper_preference = "background_enabled=";
     String layout_side_preference = "layout_side=";
     String preferences_filename = "preferences.txt";
     String layout_preference_filename = "layout.txt";
-
+*/
 /******************************Nav bar setup********************************/
     private String[] mPlanetTitles;
     private DrawerLayout mDrawerLayout;
@@ -64,7 +64,22 @@ public class InterfaceUI extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator_ui);
 
-//**************** Nav Bar Setup******************************************
+/******************************SavePreferences******************************/
+
+    Bundle bundle = getIntent().getExtras();
+    if (bundle != null) {
+    wallpaper_checker = bundle.getBoolean("Wall", false);
+    layout_side = bundle.getBoolean("Side", false);
+    } else {
+    SharedPreferences settings = getSharedPreferences("PREFS", 0);
+    wallpaper_checker = settings.getBoolean("Wall", false);
+    layout_side = settings.getBoolean("Side", false);
+    }
+
+
+/*****************************SavePreferences****************************/
+
+/**************** Nav Bar Setup******************************************/
         mPlanetTitles = getResources().getStringArray(R.array.planets_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
@@ -75,9 +90,9 @@ public class InterfaceUI extends Activity {
         // Set the list's click listener
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
-//**************** Nav Bar Setup******************************************
+/**************** Nav Bar Setup******************************************/
 
-//**************** Open nav bar with app icon******************************************
+/**************** Open nav bar with app icon******************************************/
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerToggle = new ActionBarDrawerToggle(
@@ -105,11 +120,11 @@ public class InterfaceUI extends Activity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
 
-//**************** Open nav bar with app icon******************************************
+/**************** Open nav bar with app icon******************************************/
 
 
 
-        if(SavePreferences.mCheckSettingsFile(preferences_filename)){
+/*        if(SavePreferences.mCheckSettingsFile(preferences_filename)){
         wallpaper_checker = !Character.toString((SavePreferences.getPreference(
                 wallpaper_preference, preferences_filename).charAt(
                 SavePreferences.getPreference(wallpaper_preference, preferences_filename).length() - 1))).equals("0");
@@ -134,7 +149,7 @@ public class InterfaceUI extends Activity {
         }
         Log.d(TAG, "wallpaper_checker = " + wallpaper_checker);
         Log.d(TAG, "layout_side = " + layout_side);
-
+*/
         mAddKeypadLayout();
 
         mUpdateDisplay();
@@ -421,7 +436,7 @@ public class InterfaceUI extends Activity {
 
     public void mAddKeypadLayout() {
 
-        if (layout_side == 0) {
+        if (layout_side == false) {
         LinearLayout keypad_layout = (LinearLayout) findViewById(R.id.keypad_layout);
         LayoutInflater inflateKeypad;
         inflateKeypad = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -453,19 +468,19 @@ public class InterfaceUI extends Activity {
                 .inflate(R.layout.keypad_right, null);
 
 
-        if (layout_side == 0) {
+        if (layout_side == true) {
 
             keypad_layout.removeAllViews();
             keypad_layout.addView(keypad_left);
             mButtonSetup();
-            layout_side = 1;
+            layout_side = false;
 
-        } else if (layout_side == 1) {
+        } else if (layout_side == true) {
 
             keypad_layout.removeAllViews(/*keypad_left*/);
             keypad_layout.addView(keypad_right);
             mButtonSetup();
-            layout_side = 0;
+            layout_side = true;
 
         }
         mSaveSettings();
@@ -591,11 +606,14 @@ public class InterfaceUI extends Activity {
         mSaveSettings();
         Log.d(TAG, "wallpaper_checker entering preferences = " + wallpaper_checker);
         Intent Preferences = new Intent(getBaseContext(), com.madwin.mwcalc.PreferencesUI.class);
+        Preferences.putExtra("wallpaper", wallpaper_checker);
+        Preferences.putExtra("layout", layout_side);
         this.startActivity(Preferences);
         finish();
     }
 
     public void mShowHelp() {
+
         Intent Help = new Intent(getBaseContext(), com.madwin.mwcalc.HelpUI.class);
         this.startActivity(Help);
     }
@@ -665,7 +683,7 @@ public class InterfaceUI extends Activity {
     }
 
 public void mSaveSettings() {
-
+/*
     String wallpaper_save_value;
     String layout_side_value;
     if (wallpaper_checker){
@@ -673,10 +691,14 @@ public void mSaveSettings() {
     }else{
         wallpaper_save_value = "0";
     }
-
     layout_side_value = Integer.toString(layout_side);
     SavePreferences.mSaveToFile(wallpaper_preference, wallpaper_save_value, preferences_filename);
     SavePreferences.mSaveToFile(layout_side_preference, layout_side_value, layout_preference_filename);
+*/
+    SharedPreferences settings = getSharedPreferences("PREFS", 0);
+    SharedPreferences.Editor pref_editor = settings.edit();
+    pref_editor.putBoolean("Wall", wallpaper_checker);
+    pref_editor.putBoolean("Side", layout_side);
 
 }
 
@@ -728,4 +750,10 @@ public void mSaveSettings() {
         getActionBar().setTitle(mTitle);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        mSaveSettings();
+    }
 }

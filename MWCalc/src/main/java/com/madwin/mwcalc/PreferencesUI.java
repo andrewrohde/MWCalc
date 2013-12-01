@@ -32,7 +32,7 @@ import java.io.OutputStream;
  */
 public class PreferencesUI extends Activity {
 
-    String TAG = "MWCalc";
+  /*  String TAG = "MWCalc";
     SharedPreferences preferences;
     File file;
     //String preferences_location = "/data/data/com.madwin.MWCalc/preferences/";
@@ -40,12 +40,12 @@ public class PreferencesUI extends Activity {
     String layout_preference_filename = "layout.txt";
     String background_save_string = "";
     String background_preference = "background_enabled=";
-    Boolean wallpaper_checker = false;
-    String layout_side;
-    Boolean hand_checker = false;
     String wallpaper_value = "";
     String layout_preference = "layout_side=";
     String layout_save_string = "";
+*/
+    Boolean wallpaper_checker;
+    Boolean layout_side;
 
 
     public void onCreate(Bundle savedInstanceState) {
@@ -54,7 +54,14 @@ public class PreferencesUI extends Activity {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        if (SavePreferences.mCheckSettingsFile(preferences_filename)){
+        Bundle bundle = getIntent().getExtras();
+        wallpaper_checker = bundle.getBoolean("Wall", false);
+        layout_side = bundle.getBoolean("Side", false);
+
+
+
+
+        /*if (SavePreferences.mCheckSettingsFile(preferences_filename)){
             background_save_string = SavePreferences.getPreference(background_preference, preferences_filename);
             Log.d(TAG, "background_save_string = " + background_save_string);
 
@@ -73,11 +80,11 @@ public class PreferencesUI extends Activity {
 
         Log.d(TAG, "hand_checker = " + hand_checker);
         Log.d(TAG, "wallpaper_checker = " + wallpaper_checker);
-
+*/
         CheckBox wall_checkBox = (CheckBox) findViewById(R.id.wallCheckBox);
         CheckBox hand_checkBox = (CheckBox) findViewById(R.id.handCheckBox);
         wall_checkBox.setChecked(wallpaper_checker);
-        hand_checkBox.setChecked(hand_checker);
+        hand_checkBox.setChecked(layout_side);
 
         wall_checkBox.setOnClickListener(wallCheckBoxListener);
         hand_checkBox.setOnClickListener(handCheckBoxListener);
@@ -88,13 +95,13 @@ public class PreferencesUI extends Activity {
         public void onClick(View v) {
             CheckBox wall_checkBox = (CheckBox) findViewById(R.id.wallCheckBox);
             wallpaper_checker = !wallpaper_checker;
-            if (wall_checkBox.isChecked()) {
-                wallpaper_value = "1";
-            } else{
-                wallpaper_value = "0";
-            }
-            Log.d(TAG, "wallpaper_checker when button pressed = " + wallpaper_checker);
-            SavePreferences.mSaveToFile(background_preference, wallpaper_value, preferences_filename);
+      //      if (wall_checkBox.isChecked()) {
+      //          wallpaper_value = "1";
+      //      } else{
+       //         wallpaper_value = "0";
+       //     }
+       //     Log.d(TAG, "wallpaper_checker when button pressed = " + wallpaper_checker);
+           // SavePreferences.mSaveToFile(background_preference, wallpaper_value, preferences_filename);
         }
 
     };
@@ -102,21 +109,23 @@ public class PreferencesUI extends Activity {
     private View.OnClickListener handCheckBoxListener = new View.OnClickListener() {
         public void onClick(View v) {
             CheckBox hand_checkBox = (CheckBox) findViewById(R.id.handCheckBox);
-            hand_checker = !hand_checker;
-            if (hand_checkBox.isChecked()) {
-                layout_side = "0";
+            layout_side = !layout_side;
+/*            if (hand_checkBox.isChecked()) {
+                layout_side = false;
             } else{
-                layout_side = "1";
+                layout_side = true;
             }
             Log.d(TAG, "hand_checker after button pressed = " + hand_checker);
-            SavePreferences.mSaveToFile(layout_preference, layout_side, layout_preference_filename);
-
+            //SavePreferences.mSaveToFile(layout_preference, layout_side, layout_preference_filename);
+*/
         }
 
     };
 
     public boolean onOptionsItemSelected(MenuItem item){
         Intent back_to_calc = new Intent(this, InterfaceUI.class);
+        back_to_calc.putExtra("Wall", wallpaper_checker);
+        back_to_calc.putExtra("Side", layout_side);
         this.startActivity(back_to_calc);
         finish();
         return true;
@@ -126,6 +135,8 @@ public class PreferencesUI extends Activity {
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Intent back_to_calc = new Intent(this, InterfaceUI.class);
+            back_to_calc.putExtra("Wall", wallpaper_checker);
+            back_to_calc.putExtra("Side", layout_side);
             this.startActivity(back_to_calc);
             finish();
         }
