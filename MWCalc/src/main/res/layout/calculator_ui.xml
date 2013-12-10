@@ -33,7 +33,7 @@
             android:background="@color/TransDarkGray"
             android:singleLine="false"
             android:text="@string/calculator_text_view"
-            android:textSize="45sp"
+            android:textSize="35sp"
             android:textAlignment="gravity"
             android:lines="1"/>
 
@@ -46,7 +46,7 @@
             android:background="@color/TransDarkGray"
             android:singleLine="false"
             android:text="@string/calculator_text_view"
-            android:textSize="45sp"
+            android:textSize="35sp"
             android:textAlignment="gravity"
             android:lines="1"/>
 
