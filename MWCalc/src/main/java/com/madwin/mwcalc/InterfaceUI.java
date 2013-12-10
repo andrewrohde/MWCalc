@@ -465,9 +465,12 @@ public class InterfaceUI extends Activity {
 
         mSetButtonSize();
 
+            current_display_value = FormatCalcValue.mShortenForTextView(
+                    FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
+                    current_display_value)));
+            display.setText(
+                    current_display_value);
 
-            display.setText(FormatCalcValue.mShortenForTextView(FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
-                    current_display_value))));
 
         if (first_number == 0){
             previous_value.setText("");
