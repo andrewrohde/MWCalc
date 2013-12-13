@@ -108,4 +108,8 @@
     <string name="action_websearch">Web search</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
 
+    <string name="settings_bg_color_dialog">Color Picker</string>
+    <string name="settings_default_color_confirm">Default color confirm</string>
+    <string name="settings_bg_color_confirm">Color Confirm</string>
+
 </resources>
