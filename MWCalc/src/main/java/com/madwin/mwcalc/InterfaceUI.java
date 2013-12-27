@@ -1,13 +1,12 @@
 package com.madwin.mwcalc;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -26,10 +25,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
-import java.text.DecimalFormat;
-import java.util.Locale;
-
-
 public class InterfaceUI extends Activity {
 
 
@@ -43,7 +38,11 @@ public class InterfaceUI extends Activity {
     private Boolean layout_side;
     ViewGroup.LayoutParams params;
     private int last_button; // 1 for number, 2 for operator, 3 for equals
-    SharedPreferences settings;
+    SharedPreferences preferences;
+    private int intButtonColor;
+    private int intTextColor;
+
+
 /******************************Nav bar setup********************************/
     private String[] mPlanetTitles;
     private DrawerLayout mDrawerLayout;
@@ -61,10 +60,11 @@ public class InterfaceUI extends Activity {
         setContentView(R.layout.calculator_ui);
 
 /******************************SavePreferences******************************/
-    settings = getSharedPreferences("PREFS", 0);
-    wallpaper_checker = settings.getBoolean("Wall", false);
-    layout_side = settings.getBoolean("Side", false);
-
+    preferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+    wallpaper_checker = preferences.getBoolean("Wall", false);
+    layout_side = preferences.getBoolean("Side", false);
+    intButtonColor = preferences.getInt("ButtonColor", -13388315);
+    intTextColor = preferences.getInt("TextColor", -1338315);
 
 /*****************************SavePreferences****************************/
 
@@ -488,6 +488,8 @@ public class InterfaceUI extends Activity {
             calculator_layout.setBackgroundColor(getResources().getColor(R.color.Black));
         }
         mSaveSettings();
+
+
     }
 
     private void mSetButtonSize() {
@@ -524,7 +526,6 @@ public class InterfaceUI extends Activity {
         params = buttonOne.getLayoutParams();
         params.height = button_dimension;
         params.width = button_dimension;
-
         buttonOne.setLayoutParams(params);
         buttonTwo.setLayoutParams(params);
         buttonThree.setLayoutParams(params);
@@ -546,6 +547,37 @@ public class InterfaceUI extends Activity {
         button_squared.setLayoutParams(params);
         buttonDelete.setLayoutParams(params);
         button_ui_switch.setLayoutParams(params);
+
+       // Log.d(TAG, "Current button color as int = " + buttonOne.getCurrentTextColor());
+        buttonOne.setTextColor(intButtonColor);
+        buttonTwo.setTextColor(intButtonColor);
+        buttonThree.setTextColor(intButtonColor);
+        buttonFour.setTextColor(intButtonColor);
+        buttonFive.setTextColor(intButtonColor);
+        buttonSix.setTextColor(intButtonColor);
+        buttonSeven.setTextColor(intButtonColor);
+        buttonEight.setTextColor(intButtonColor);
+        buttonNine.setTextColor(intButtonColor);
+        buttonZero.setTextColor(intButtonColor);
+        buttonAddition.setTextColor(intButtonColor);
+        buttonEquals.setTextColor(intButtonColor);
+        buttonDecimal.setTextColor(intButtonColor);
+        buttonDivision.setTextColor(intButtonColor);
+        buttonMultiplication.setTextColor(intButtonColor);
+        buttonSubtraction.setTextColor(intButtonColor);
+        buttonClear.setTextColor(intButtonColor);
+        button_Sqrt.setTextColor(intButtonColor);
+        button_squared.setTextColor(intButtonColor);
+        buttonDelete.setTextColor(intButtonColor);
+        button_ui_switch.setTextColor(intButtonColor);
+
+        TextView display = (TextView)findViewById(R.id.currently_displayed_value);
+        TextView previous_value = (TextView)findViewById(R.id.previous_value);
+
+        display.setTextColor(intTextColor);
+        previous_value.setTextColor(intTextColor);
+
+
     }
 
     public boolean onKeyUp(int keyCode, KeyEvent event) {
@@ -647,10 +679,13 @@ public class InterfaceUI extends Activity {
     }
 
 public void mSaveSettings() {
-    settings = this.getSharedPreferences("PREFS", 0);
-    SharedPreferences.Editor pref_editor = settings.edit();
+    preferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+    SharedPreferences.Editor pref_editor = preferences.edit();
     pref_editor.putBoolean("Wall", wallpaper_checker).commit();
     pref_editor.putBoolean("Side", layout_side).commit();
+
+   // Button buttonOne = (Button)findViewById(R.id.one);
+   // pref_editor.putInt("ButtonColor", buttonOne.getCurrentTextColor()).commit();
 
 }
 

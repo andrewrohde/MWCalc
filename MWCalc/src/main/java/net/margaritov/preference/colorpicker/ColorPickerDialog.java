@@ -29,7 +29,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.android.settings.R;
+import com.madwin.mwcalc.R;
+
 
 public class ColorPickerDialog
         extends

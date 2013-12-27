@@ -108,8 +108,20 @@
     <string name="action_websearch">Web search</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
 
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
     <string name="settings_bg_color_dialog">Color Picker</string>
     <string name="settings_default_color_confirm">Default color confirm</string>
     <string name="settings_bg_color_confirm">Color Confirm</string>
+
 
 </resources>
