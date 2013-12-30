@@ -94,6 +94,8 @@
     <string name="square_root_text">√</string>
     <string name="decimal_text">.</string>
     <string name="left_right_hand">Left Handed / Right Handed</string>
+    <string name="right_ui_selector">&gt;</string>
+    <string name="left_ui_selector">&lt;</string>
 
 
     <!-- nav menu Strings-->.

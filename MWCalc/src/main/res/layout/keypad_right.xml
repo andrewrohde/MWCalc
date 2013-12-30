@@ -19,13 +19,17 @@
             android:layout_gravity="center|left">
 
             <Button
+                style="@style/CalcButtonStyle"
                 android:id="@+id/ui_switch"
                 android:layout_width="@dimen/button_width"
                 android:layout_height="@dimen/button_height"
                 android:scaleType="centerInside"
-                android:background="@drawable/left_ui_selector"
                 android:clickable="true"
-                android:gravity="center|left"/>
+                android:gravity="center|center"
+                android:text="@string/left_ui_selector"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:background="@drawable/ui_selector"/>
 
         </LinearLayout>
         </LinearLayout>

@@ -42,7 +42,6 @@ public class InterfaceUI extends Activity {
     private int intButtonColor;
     private int intTextColor;
 
-
 /******************************Nav bar setup********************************/
     private String[] mPlanetTitles;
     private DrawerLayout mDrawerLayout;
@@ -117,6 +116,10 @@ public class InterfaceUI extends Activity {
         mUpdateDisplay();
 
         mButtonSetup();
+
+        mSetButtonSize();
+
+        mSetColors();
     }
 /****************Display Setup********************************************************/
     @Override
@@ -392,6 +395,7 @@ public class InterfaceUI extends Activity {
         public void onClick(View v) {
 
         mUISwitch();
+        mSetColors();
         }
     };
 
@@ -463,8 +467,6 @@ public class InterfaceUI extends Activity {
         button_height = ((int)(button_layout_height * 0.66))/6;
         button_width = button_layout_width/4;
 
-        mSetButtonSize();
-
             current_display_value = FormatCalcValue.mShortenForTextView(
                     FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
                     current_display_value)));
@@ -487,7 +489,7 @@ public class InterfaceUI extends Activity {
         } else {
             calculator_layout.setBackgroundColor(getResources().getColor(R.color.Black));
         }
-        mSaveSettings();
+     //   mSaveSettings();
 
 
     }
@@ -547,6 +549,31 @@ public class InterfaceUI extends Activity {
         button_squared.setLayoutParams(params);
         buttonDelete.setLayoutParams(params);
         button_ui_switch.setLayoutParams(params);
+    }
+
+    private void mSetColors() {
+
+        Button buttonOne = (Button)findViewById(R.id.one);
+        Button buttonTwo = (Button)findViewById(R.id.two);
+        Button buttonThree = (Button)findViewById(R.id.three);
+        Button buttonFour = (Button)findViewById(R.id.four);
+        Button buttonFive = (Button)findViewById(R.id.five);
+        Button buttonSix = (Button)findViewById(R.id.six);
+        Button buttonSeven = (Button)findViewById(R.id.seven);
+        Button buttonEight = (Button)findViewById(R.id.eight);
+        Button buttonNine = (Button)findViewById(R.id.nine);
+        Button buttonZero = (Button)findViewById(R.id.zero);
+        Button buttonAddition = (Button)findViewById(R.id.addition);
+        Button buttonSubtraction = (Button)findViewById(R.id.subtraction);
+        Button buttonEquals = (Button)findViewById(R.id.equals);
+        Button buttonMultiplication = (Button)findViewById(R.id.multiplication);
+        Button buttonDivision = (Button)findViewById(R.id.division);
+        Button buttonDecimal = (Button)findViewById(R.id.decimal);
+        Button buttonClear = (Button)findViewById(R.id.clear);
+        Button buttonDelete = (Button)findViewById(R.id.delete);
+        Button button_Sqrt = (Button)findViewById(R.id.sqrt);
+        Button button_squared = (Button)findViewById(R.id.squared);
+        Button button_ui_switch = (Button)findViewById(R.id.ui_switch);
 
        // Log.d(TAG, "Current button color as int = " + buttonOne.getCurrentTextColor());
         buttonOne.setTextColor(intButtonColor);
@@ -616,8 +643,6 @@ public class InterfaceUI extends Activity {
 
     public void mButtonSetup() {
 
-
-        //Button setup
         Button buttonOne = (Button)findViewById(R.id.one);
         Button buttonTwo = (Button)findViewById(R.id.two);
         Button buttonThree = (Button)findViewById(R.id.three);

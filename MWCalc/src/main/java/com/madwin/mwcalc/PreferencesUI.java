@@ -34,6 +34,9 @@ public class PreferencesUI extends PreferenceActivity {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.preferences);
+
+
+
       //  ActionBar actionBar = getActionBar();
       //  actionBar.setDisplayHomeAsUpEnabled(true);
 
