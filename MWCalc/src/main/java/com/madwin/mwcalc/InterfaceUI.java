@@ -120,6 +120,8 @@ public class InterfaceUI extends Activity {
         mSetButtonSize();
 
         mSetColors();
+
+        mSetBackground();
     }
 /****************Display Setup********************************************************/
     @Override
@@ -483,14 +485,6 @@ public class InterfaceUI extends Activity {
                             FormatCalcValue.mRemoveTrailingPointZero(
                                     Double.toString(first_number))));
         }
-        if(wallpaper_checker){
-            calculator_layout.setBackground(getResources()
-                    .getDrawable(R.drawable.background_math_final));
-        } else {
-            calculator_layout.setBackgroundColor(getResources().getColor(R.color.Black));
-        }
-     //   mSaveSettings();
-
 
     }
 
@@ -604,6 +598,25 @@ public class InterfaceUI extends Activity {
         display.setTextColor(intTextColor);
         previous_value.setTextColor(intTextColor);
 
+
+    }
+
+    private void mSetBackground(){
+
+        LinearLayout calculator_layout = (LinearLayout)findViewById(R.id.calculator_layout);
+
+        if (preferences.getBoolean("BackgroundStyle", false)) {
+            calculator_layout.setBackgroundColor(preferences.getInt("BackgroundColor",
+                    getResources().getColor(R.color.Black)));
+        } else {
+
+            if(wallpaper_checker){
+                calculator_layout.setBackground(getResources()
+                        .getDrawable(R.drawable.background_math_final));
+            } else {
+                calculator_layout.setBackgroundColor(getResources().getColor(R.color.Black));
+            }
+        }
 
     }
 

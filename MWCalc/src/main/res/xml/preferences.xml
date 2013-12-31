@@ -2,12 +2,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <CheckBoxPreference
-        android:title="Background"
-        android:summary="@string/pref_wall_change"
-        android:key="Wall"/>
-
     <CheckBoxPreference
         android:title="Left/Right UI"
         android:summary="@string/left_right_hand"
@@ -18,9 +12,26 @@
         android:title="Button Color"
         android:summary="Change the color of the calculator buttons"
         android:defaultValue="@color/Holo_Blue"/>
+
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="TextColor"
         android:title="Text Color"
         android:summary="Change the color of the text"
         android:defaultValue="@color/Holo_Blue"/>
+
+    <SwitchPreference
+        android:title="Background Image or Color"
+        android:key="BackgroundStyle"/>
+
+    <CheckBoxPreference
+        android:title="Background"
+        android:summary="@string/pref_wall_change"
+        android:key="Wall"/>
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:dependency="BackgroundStyle"
+        android:key="BackgroundColor"
+        android:title="Background Color"
+        android:summary="Select background color"
+        android:defaultValue="@color/Black"/>
 </PreferenceScreen>
