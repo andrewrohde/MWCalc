@@ -27,7 +27,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
-            android:textAlignment="center"
+            android:gravity="center_horizontal"
             android:imeOptions="actionDone"/>
 
     <ScrollView

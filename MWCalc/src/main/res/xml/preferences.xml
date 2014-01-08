@@ -20,7 +20,7 @@
         android:defaultValue="@color/Holo_Blue"/>
 
     <SwitchPreference
-        android:title="Background Image or Color"
+        android:title="Background Color"
         android:key="BackgroundStyle"/>
 
     <CheckBoxPreference

@@ -6,6 +6,6 @@
             android:drawable="@drawable/arrow_background"/>
 
     <item android:state_pressed="true"
-            android:drawable="@drawable/button_pressed"/>
+            android:drawable="@drawable/button_pressed2"/>
 
 </selector>
