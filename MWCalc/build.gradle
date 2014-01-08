@@ -10,17 +10,19 @@ buildscript {
 apply plugin: 'android'
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.+'
     compile fileTree(dir: 'libs', include: '*.jar')
 }
 
 repositories {
-    mavenCentral()
+mavenCentral()
+}
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
 }
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "18.1.0"
+    buildToolsVersion '19.0.1'
 
     defaultConfig {
         minSdkVersion 11

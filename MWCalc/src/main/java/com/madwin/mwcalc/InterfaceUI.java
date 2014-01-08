@@ -1,10 +1,12 @@
 package com.madwin.mwcalc;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.view.GravityCompat;
@@ -355,6 +357,7 @@ public class InterfaceUI extends Activity {
 
                 first_number = Double.parseDouble(a);
             }
+            current_display_value = FormatCalcValue.mRemoveTrailingPointZero(current_display_value);
 
             mUpdateDisplay();
         }
@@ -469,9 +472,8 @@ public class InterfaceUI extends Activity {
         button_height = ((int)(button_layout_height * 0.66))/6;
         button_width = button_layout_width/4;
 
-            current_display_value = FormatCalcValue.mShortenForTextView(
-                    FormatCalcValue.mRemoveTrailingPointZero(FormatCalcValue.mCalcNullChecker(
-                    current_display_value)));
+            current_display_value = FormatCalcValue.mShortenForTextView(FormatCalcValue.mCalcNullChecker(
+                    current_display_value));
             display.setText(
                     current_display_value);
 
@@ -780,6 +782,7 @@ public void mSaveSettings() {
 
         mSaveSettings();
     }
+
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
     @Override
