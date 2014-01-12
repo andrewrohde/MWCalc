@@ -784,7 +784,7 @@ public void mSaveSettings() {
     }
 
 
-    @TargetApi(Build.VERSION_CODES.KITKAT)
+  /*  @TargetApi(Build.VERSION_CODES.KITKAT)
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
@@ -798,4 +798,5 @@ public void mSaveSettings() {
                           //  | View.SYSTEM_UI_FLAG_FULLSCREEN
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);}
     }
+    */
 }
